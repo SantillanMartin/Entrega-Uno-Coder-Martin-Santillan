@@ -130,9 +130,6 @@ html{
     background-color: #ff0000;
     
 }
-.buscador__selector:hover{
-    background-color: red;
-}
 
 
 .buscador__container{
@@ -170,10 +167,26 @@ html{
     font-size: 1.4rem;
      
 }
+/* ANIMACION DEL AVION EN EL BUSCADOR*/
 .buscador__de__vuelos__imagen{
     
     width: 5rem;
+    animation: movimiento 2s linear infinite;
 }
+
+
+@keyframes movimiento{
+    0%{
+        transform: translateX(0);
+    }
+    50%{
+        transform: translate(8px,-5px);
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
+
 .buscador__vuelos__container__checkboxboton{
     display: flex;
     flex-wrap: wrap;
@@ -352,7 +365,8 @@ button:hover{
     width: 1200px;
     height: 500px;
     border-radius: 8px;
-    background-color: rgba(255, 0, 0, 0.8);
+    background: rgb(253,29,29);
+    background: linear-gradient(0deg, rgba(253,29,29,1) 15%, rgba(242,83,83,1) 52%, rgba(233,87,87,1) 100%);
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -513,22 +527,25 @@ button:hover{
 
 .financiamiento__boton__bancos{
     border: none;
-    border-radius: 15px;
+    border-radius: 8px;
     width: 300px;
     height: 40px;
     background-color: rgba(0, 0, 0, 0.808);
     color: white;
     font-size: 25px;
-    font-weight: bold;
+    font-weight:300;
     font-family: var(--font-principal);
-    transition: 0.5s;
+    transition: 1s;
     margin-bottom: 4rem;
     
 }
 
 .financiamiento__boton__bancos:hover{
+    background-color: rgb(238, 54, 54);
     cursor: pointer;
-    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 12px 8px rgba(0, 0, 0, 0.75);
+    transform: scale(1.2);
+    border-radius: 25px;
 }
 
 /* SECTOR PREFOOTER*/
@@ -536,11 +553,11 @@ button:hover{
 
 .prefooter{
     display: flex;
-    
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    background-color: #D9D9D9;
+    background: rgb(187,179,179);
+    background: radial-gradient(circle, rgb(187, 179, 179) 0%, rgba(87,84,84,1) 67%);
     width: 100%;
     height: 21rem;
     display: flex;
@@ -565,16 +582,16 @@ button:hover{
     font-size: 1.9rem;
     word-spacing: 5px;
     text-align: center;
-    font-weight: bold;
-    text-decoration:underline;
+    font-weight: 400;
     margin-bottom: 2rem;
+    
     
     
 }
 
 .prefooter__legales__textodos{
     font-size: 1.9rem;
-    font-weight: bold;
+    font-weight: 400;
     text-align: center;
     margin-left: 2rem;
     margin-right: 2rem;
@@ -583,15 +600,16 @@ button:hover{
 .boton__arrepentimiento button:hover{
     cursor: pointer;
     box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.75);
+    background-color: #ff0000d3;
    
 }
 
 
 .boton__arrepentimiento button{
-    background-color: rgba(255, 0, 0, 0.8);
+    background-color: rgba(238, 34, 34, 0.918);
     border: none;
     border-radius: 15px;
-    font-weight: bolder;
+    font-weight: 400;
     color: white;
     width: 25rem;
     height: 35px;
@@ -603,7 +621,7 @@ button:hover{
 
 /* COMIENZO DEL FOOTER COMPARTIDO POR TODAS LAS PAGINAS*/
 .footer{
-    background-color: rgba(0, 0, 0, 0.79);
+    background-color: black;
     width: 100%;
     height: 90px;
     display: flex;
