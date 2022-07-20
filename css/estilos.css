@@ -1,0 +1,1144 @@
+html{
+    scroll-behavior: smooth;
+  }
+
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+body{
+    
+    font-family: 'Poppins', sans-serif;
+
+
+}
+/* Se crearon distintas clases para que dentro del body de las 5 paginas esten distintas imagenes*/
+.fondo__pagina{
+    background-image: url(../imagenes/paris.jpg);
+    background-size: 100vw 100vh;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.fondo__header__destinos{
+    background-image: url(../imagenes/playa.jpg);
+    background-size: 100vw 50vh;
+    background-repeat: no-repeat;
+}
+
+.fondo__header__hoteles{
+    background-image: url(../imagenes/vegas.jpg);
+    background-size: 100vw 50vh;
+    background-repeat: no-repeat;
+    
+}
+
+.fondo__header__autos{
+    background-image: url(../imagenes/ruta_66.jpg);
+    background-size: 100vw 50vh;
+    background-repeat: no-repeat;
+}
+/*.fondo__header__contacto{
+    background-image: url(../imagenes/yosemite.jpg);
+    background-size: 100vw 650px;
+    background-repeat: no-repeat;
+}
+*/
+.imagen__fondo__formulario{
+    background-image: url(../imagenes/yosemite.jpg);
+    background-size: 100vw 800px;
+    background-repeat: no-repeat;
+    height: 800px;
+}
+/* Maquetacion del Header junto con su nav*/
+
+
+.header{
+    
+    width: 100%;
+    height: 140px;
+    background-color: rgb(0, 0, 0,0.25);
+
+
+    
+}
+.header__fondo--opacidad{
+    background-color: rgba(0, 0, 0, 0.856);
+}
+
+
+.header__logo{
+    width: 400px;
+    position: absolute;
+    font-size: 1.875rem;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    margin-top: 45px;
+    margin-left: 25px;
+}
+.header__logo__contacto--size{
+    font-size: 2.65rem;
+}
+.header__nav__lista li{
+    display: inline;
+}
+
+ul,li{
+    display: inline;
+}
+.header__nav__lista{
+    position: absolute;
+    right:0;
+    margin-right: 90px;
+    margin-top: 60px;
+    
+    
+}
+.header__nav__lista a{
+    padding: 25px;
+    font-size: 25px;
+    /*-webkit-text-stroke: 1px rgb(0, 0, 0);*/
+    
+    
+}
+a{
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+/* Empieza el contenido del index*/
+.contenido__principal{
+    width: 100%;
+    height: 699px;
+    position: relative;
+    
+}
+
+.contenido__principal .contenido__principal__titulo{
+    width: 40%;
+    position: absolute;
+    top: 100px;
+    font-size: 90px;
+    text-align:left;
+    margin-left: 50px;
+    color: white;
+    text-shadow:10px 10px 4px black;
+    -webkit-text-stroke:  rgb(0, 0, 0);
+    text-align: start;
+}
+
+.contenido__principal .contenido__principal__imagen{
+    
+    position: absolute;
+    bottom: 30px;
+    left: 10%;
+    width: 200px;
+    height: 170px;
+}
+
+
+
+/*Aca empieza el sector principal de destinos
+
+Es el buscador clasico de vuelos
+*/
+
+.buscador{
+    width: 100%;
+    height: 325px;
+    
+}
+.buscador__de__vuelos,.buscador__hotel,.buscador__autos{
+    position: relative;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 20px;
+    width:57%;
+    height: 250px;
+    margin: auto;
+    margin-top: 2rem;
+}
+.buscador__titulo{
+    position: absolute;
+    left: 18px;
+    top: 10px;
+    font-size: 17px;
+    font-weight: lighter;
+}
+.buscador__selector{
+    position: absolute;
+    left: 18px;
+    top: 50px;
+}
+.buscador__selector input[type="radio"]{
+    margin:10px;
+    background-color: #AFACAC;
+    
+}
+
+
+.buscador__de__vuelos__eleccion{
+    display: inline;
+    position: absolute;
+    top: 100px;
+    left: 18px;
+    width: 157px;
+    height: 53px;
+    border-radius: 15px;
+    background-color: #AFACAC;
+    
+}
+.buscador__de__vuelos__eleccion input{
+    position: absolute;
+    font-family: 'Poppins', sans-serif;
+    font-size:15px; ;
+    left: 12px;
+    width: 130px;
+    height: 25px;
+    background-color: #AFACAC;
+    border: none;
+    
+}
+.buscador__de__vuelos__eleccion h4{
+    font-weight: lighter;
+    font-size: 13px;
+    text-align: center;   
+}
+.buscador__de__vuelos__imagen{
+    position: absolute;
+    top: 100px;
+    left: 178px;
+    width: 50px;
+}
+
+/* Modificadores que use para no tener que crear varias clases para cada input del buscador__de__vuelos*/
+.buscador__de__vuelos--medida--destino{
+    position: absolute;
+    top: 100px;
+    left:230px;
+}
+.buscador__de__vuelos--medida--fechaida{
+    position: absolute;
+    top: 100px;
+    left: 400px;
+}
+.buscador__de__vuelos--medida--fechavuelta{
+    position: absolute;
+    top: 100px;
+    left: 570px;
+}
+.buscador__de__vuelos--medida--personas{
+    position: absolute;
+    top: 100px;
+    left: 740px;
+}
+
+.buscador__de__vuelos--medida--clase{
+    position: absolute;
+    top: 100px;
+    left: 910px;
+}
+
+.buscador__de__vuelos__checkbox{
+    position: absolute;
+    top: 190px;
+    left: 18px;
+
+}
+.buscador__de__vuelos__checkbox input[type="checkbox"]{
+    margin-left: 5px;
+    margin-right: 10px;
+}
+
+.boton{
+    border-radius: 100px;
+    position: absolute;
+    top: 178px;
+    left: 440px;
+    width: 130px;
+    height: 50px;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    background-color: rgba(255, 0, 0, 0.712);
+    font-weight:bold;
+    border: none;
+}
+
+button:hover{
+    cursor: pointer;
+    background-color: rgba(255, 0, 0, 0.897);
+    transition: 0.4s ease-in-out;
+}
+
+/* Comienza la segunda parte del main con los destinos de la seccion destinos*/
+
+.ofertas{
+    width:100%;
+    height: 1200px;
+    
+    
+}
+
+.ofertas__titulo{
+    text-align: center;
+    font-size: 40px;
+    margin-top: 30px;
+}
+
+.ofertas__titulo .ofertas__titulo--color{
+    color: red;
+    
+}
+
+.ofertas__subtitulo{
+    position: absolute;
+    left: 36.5%;
+    text-align: justify;
+    font-weight:300;
+    
+}
+
+.ofertas__lugares{
+    
+    position: relative;
+    width: 90%;
+    height: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+}
+.ofertas__lugares__promo1{
+    position: absolute;
+    left: 250px;
+    top: 48px;
+    border: solid rgba(102, 102, 102, 0.08);
+    border-radius: 15px;
+    width: 276px;
+    height: 400px;
+}
+
+.ofertas__lugares__promo1__imagen{
+    width: 270px;
+    height: 250px;
+    border-radius: 15px;
+    
+}
+.ofertas__lugares__promo1__titulo{
+    position: absolute;
+    font-weight: 400;
+    bottom: 70px;
+    left: 15px;
+}
+.ofertas__lugares__promo1__subtitulo{
+    position: absolute;
+    font-weight: 400;
+    bottom: 40px;
+    left: 15px;
+}
+
+.ofertas__lugares__promo1__precio{
+    position: absolute;
+    font-weight: 600;
+    bottom: 40px;
+    right: 20px;
+    background-color: rgba(255, 0, 0, 0.767);
+    color: white;
+    border-radius: 7px;
+    width: 70px;
+    text-align: center;
+}
+
+.ofertas__lugares__promo2{
+    position: absolute;
+    left: 590px;
+    top: 48px;
+    border: solid rgba(102, 102, 102, 0.08);
+    border-radius: 15px;
+    width: 276px;
+    height: 400px;
+}
+
+.ofertas__lugares__promo2__imagen{
+    width: 270px;
+    height: 250px;
+    border-radius: 15px;
+    
+}
+
+.ofertas__lugares__promo2__titulo{
+    position: absolute;
+    font-weight: 400;
+    bottom: 70px;
+    left: 15px;
+}
+.ofertas__lugares__promo2__subtitulo{
+    position: absolute;
+    font-weight: 400;
+    bottom: 40px;
+    left: 15px;
+}
+
+.ofertas__lugares__promo2__precio{
+    position: absolute;
+    font-weight: 600;
+    bottom: 40px;
+    right: 20px;
+    background-color: rgba(255, 0, 0, 0.767);
+    color: white;
+    border-radius: 7px;
+    width: 70px;
+    text-align: center;
+}
+
+.ofertas__lugares__promo3{
+    position: absolute;
+    right: 500px;
+    top: 48px;
+    border: solid rgba(102, 102, 102, 0.08);
+    border-radius: 15px;
+    width: 276px;
+    height: 400px;
+}
+
+.ofertas__lugares__promo3__imagen{
+    width: 270px;
+    height: 250px;
+    border-radius: 15px;
+    
+}
+
+.ofertas__lugares__promo3__titulo{
+    position: absolute;
+    font-weight: 400;
+    bottom: 70px;
+    left: 15px;
+}
+.ofertas__lugares__promo3__subtitulo{
+    position: absolute;
+    font-weight: 400;
+    bottom: 40px;
+    left: 15px;
+}
+
+.ofertas__lugares__promo3__precio{
+    position: absolute;
+    font-weight: 600;
+    bottom: 40px;
+    right: 20px;
+    background-color: rgba(255, 0, 0, 0.767);
+    color: white;
+    border-radius: 7px;
+    width: 70px;
+    text-align: center;
+}
+
+
+.ofertas__lugares__promo4{
+    position: absolute;
+    right: 160px;
+    top: 48px;
+    border: solid rgba(102, 102, 102, 0.08);
+    border-radius: 15px;
+    width: 276px;
+    height: 400px;
+}
+
+.ofertas__lugares__promo4__imagen{
+    width: 270px;
+    height: 250px;
+    border-radius: 15px;
+    
+}
+
+.ofertas__lugares__promo4__titulo{
+    position: absolute;
+    font-weight: 400;
+    bottom: 70px;
+    left: 15px;
+}
+.ofertas__lugares__promo4__subtitulo{
+    position: absolute;
+    font-weight: 400;
+    bottom: 40px;
+    left: 15px;
+}
+
+.ofertas__lugares__promo4__precio{
+    position: absolute;
+    font-weight: 600;
+    bottom: 40px;
+    right: 20px;
+    background-color: rgba(255, 0, 0, 0.767);
+    color: white;
+    border-radius: 7px;
+    width: 70px;
+    text-align: center;
+}
+
+/* segunda parte de las ofertas de la pagina destinos*/
+
+.ofertas__mes{
+    position: absolute;
+    left: 399px;
+    width: 1200px;
+    height: 500px;
+    border-radius: 8px;
+    background-color: red;
+    
+}
+
+.ofertas__mes__titulo{
+    color: white;
+    font-size: 70px;
+    position: absolute;
+    top: 10px;
+    left: 50px;
+}
+
+.ofertas__mes__subtitulo{
+    font-size: 20px;
+    background-color: white;
+    position: absolute;
+    left: 50px;
+    top:140px;
+    border-radius: 15px;
+    width:510px;
+    text-align: center;
+}
+
+.ofertas__mes__descuento{
+    position: absolute;
+    left: 50px;
+    top: 230px;
+    font-size: 20px;
+    color: white;
+}
+.ofertas__mes__descuento span{
+    font-size: 57px;
+}
+
+.ofertas__mes__hotel{
+    position: absolute;
+    bottom: 78px;
+    left: 45px;
+    color: white;
+    font-size: 40px;
+}
+.ofertas__mes__imagen{
+    position: absolute;
+    right: 50px;
+    top: 68px;
+    
+}
+.ofertas__mes__imagen img{
+    height: 350px;
+}
+
+.cuotas{
+    width: 100%;
+    height: 500px;
+    
+}
+
+.cuotas__interes{
+    background-color: red;
+    width: 500px;
+    height: 400px;
+    border-radius: 15px;
+    position: absolute;
+    left: 450px;
+}
+
+.cuotas__interes__subfondo{
+    font-weight: bold;
+    font-size: 40px;
+    background-color: white;
+    width: 470px;
+    height: 370px;
+    border-radius: 10px;
+    position: absolute;
+    left: 14px;
+    top: 13px;
+    text-align: center;
+}
+
+.cuotas__interes__subfondo__texto{
+    position: absolute;
+    top: 95px;
+}
+
+.cuotas__paisaje{
+    background-color: red;
+    width: 500px;
+    height: 400px;
+    border-radius: 15px;
+    position: absolute;
+    right: 400px;
+}
+
+.cuotas__paisaje__subfondo{
+    font-weight: bold;
+    font-size: 40px;
+    width: 470px;
+    height: 370px;
+    border-radius: 10px;
+    position: absolute;
+    right: 14px;
+    top: 13px;
+    text-align: center;
+}
+
+.cuotas__paisaje__subfondo img{
+    width:470px;
+    height: 370px;
+    border-radius: 8px;
+}
+
+/*Comienza el buscador de hoteles de la pagina Hoteles.html*/
+.buscador__titulo--fuente{
+    
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.boton__agregar__vuelo{
+    position: absolute;
+    top: 10px;
+    right: 495px;
+    background-color:rgba(0, 0, 0, 0.719);
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    border-radius: 20px;
+    width: 200px;
+    font-family: poppins;
+    border: none;
+    
+}
+.buscador__hotel__eleccion{
+    display: inline;
+    position: absolute;
+    top: 100px;
+    left: 18px;
+    width: 300px;
+    height: 53px;
+    border-radius: 15px;
+    background-color: #AFACAC;
+    
+}
+.buscador__hotel__eleccion input{
+    position: absolute;
+    font-family: 'Poppins', sans-serif;
+    font-size:15px;
+    left: 15px;
+    width: 120px;
+    height: 25px;
+    background-color: #AFACAC;
+    border: none;
+    
+    
+}
+.buscador__hotel__eleccion h4{
+    font-weight: lighter;
+    font-size: 13px;
+    text-align: center;   
+}
+
+/*Modificadores del sector buscador hotel*/
+.buscador__hotel--posicion--entrada{
+    position: absolute;
+    top: 100px;
+    left: 340px;
+}
+.buscador__de__vuelos--posicion--salida{
+    position: absolute;
+    top: 100px;
+    left: 500px;
+}
+.buscador__de__vuelos--posicion--huespedes{
+    position: absolute;
+    top: 100px;
+    left: 665px;
+}
+/* Estos modificadores cambia el ancho y alto de cada contenedor de los input*/
+.buscador__hotel--medida--buscadores{
+    width: 150px;
+}
+
+.buscador__hotel__eleccion--medida--input input{
+    width: 270px;
+}
+
+
+
+.buscador__hotel__boton{
+    position: absolute;
+    right: 7%;
+    top: 100px;
+}
+
+/*Modificador de las medidas del subtitulo del sector ofertas*/
+
+.ofertas__lugares__promo1__subtitulo--medida{
+    font-size: 12px;
+    width: 150px;
+}
+
+
+
+.boton__buscar{
+    
+    border-radius: 100px;
+    width: 150px;
+    height: 50px;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    background-color: rgba(255, 0, 0, 0.712);
+    font-weight:bold;
+    border: none;
+    
+}
+/* Aca comienza el CSS de la pagina autos.HTML*/
+
+.boton__agregar__alojamiento{
+    position: absolute;
+    top: 10px;
+    right: 495px;
+    background-color:rgba(0, 0, 0, 0.719);
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    border-radius: 20px;
+    width: 15rem;
+    font-family: poppins;
+    border: none;
+    
+}
+.boton__agregar__alojamiento--posicion{
+    position: absolute;
+    left: 24rem;
+}
+
+.buscador__autos__eleccion{
+    display: inline;
+    position: absolute;
+    top: 100px;
+    left: 18px;
+    width: 140px;
+    height: 53px;
+    border-radius: 15px;
+    background-color: #AFACAC;
+    
+}
+
+
+/*Modificadores del sector buscador autos-cambia la posicion de cada contenedor de los input*/
+.buscador__autos--posicion--diaretiro{
+    position: absolute;
+    top: 100px;
+    left: 170px;
+}
+.buscador__autos--posicion--horaretiro{
+    position: absolute;
+    top: 100px;
+    left: 320px;
+}
+.buscador__autos--posicion--diaregreso{
+    position: absolute;
+    top: 100px;
+    left: 470px;
+}
+.buscador__autos--posicion--horaregreso{
+    position: absolute;
+    top: 100px;
+    left: 620px;
+}
+.buscador__autos--posicion--edad{
+    position: absolute;
+    top: 100px;
+    left: 770px;
+}
+
+.buscador__autos--medida--edad{
+    width: 150px;
+}
+
+.buscador__autos__eleccion h4{
+    font-weight: lighter;
+    font-size: 13px;
+    text-align: center;   
+}
+
+.buscador__autos__eleccion input{
+    position: absolute;
+    font-family: 'Poppins', sans-serif;
+    font-size:15px;
+    left: 15px;
+    width: 120px;
+    height: 25px;
+    background-color: #AFACAC;
+    border: none;    
+}
+.buscador__autos__eleccion--medida--input--edad input{
+    width: 120px;
+    
+}
+.buscador__autos--medida--inicio{
+    width: 200px;
+}
+.buscador__autos__eleccion--medida--input input{
+    width: 11rem;
+    
+}
+.buscador__autos__boton button{
+    border-radius: 100px;
+    position: absolute;
+    bottom: 6.2rem;
+    right: 1rem;;
+    width: 130px;
+    height: 50px;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    background-color: rgba(255, 0, 0, 0.712);
+    font-weight:bold;
+    border: none;
+}
+
+
+/* Sector con los autos que estan con oferta*/
+
+.autos{
+    
+    width:100%;
+    
+}
+
+.ofertas__lugares__promo1--borde{
+    border: solid 0.5px rgba(0, 0, 0, 0.562);
+}
+
+.ofertas__lugares__promo__subtitulo--medida{
+    
+    position: absolute;
+    bottom: 10px;
+    width: 150px;
+}
+.ofertas__lugares__promo1__hertz{
+    font-weight: bolder;
+    font-size: 2.8rem;
+    text-align: center;
+    margin-top: 1rem;
+}
+.ofertas__lugares__promo1__hertz--tamaño{
+    font-size: 2.5rem;
+}
+.ofertas__lugares__promo1__imagen__hertz{
+    position: absolute;
+    bottom: 5rem;
+    left: 4.5rem;
+    width: 120px;
+    height: 80px;
+}
+
+.ofertas__lugares__promo1__imagen__logo{
+    width: 78px;
+    height: 50px
+}
+
+.ofertas__lugares__imagenes{
+    display: flex;
+    justify-content: space-around;
+}
+.buscador__autos__boton__vermas button{
+    border-radius: 100px;
+    position: absolute;
+    bottom: 2rem;
+    right: 4.5rem;;
+    width: 130px;
+    height: 50px;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    background-color: rgba(255, 0, 0, 0.712);
+    font-weight:bold;
+    border: none;
+}
+
+/*Comienza la ultima pagina contacto.HTML*/
+
+.formulario{
+    position: relative;
+    margin: auto;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    box-sizing: border-box;
+    width: 50rem;
+    height: 600px;
+    background-color: rgba(255, 255, 255, 0.815);
+    border-radius: 8px;
+}
+
+.formulario__titulo{
+    font-size: 1.7rem;
+    text-align: center;
+    padding-top: 10px;
+}
+
+.formulario__nombre{
+    font-size: 2rem;
+    margin-left: 20px;
+
+}
+
+.formulario__nombre input{
+    width: 300px;
+    height: 25px;
+    position: absolute;
+    top: 66px;
+    left: 18.7rem;
+    background-color:grey;
+    border-radius: 20px;
+}
+
+.formulario__apellido{
+    font-size: 2rem;
+    margin-left: 26px;
+
+}
+
+.formulario__apellido input{
+    width: 300px;
+    height: 25px;
+    position: absolute;
+    top: 114px;
+    left: 18.7rem;
+    font-weight: bold;
+    font-family: poppins;
+    background-color:grey;
+    border-radius: 20px;
+    border: none;
+}
+
+.formulario__radio{
+    font-size: 1.5rem;
+    text-align: center;
+    margin-top: 20px;
+    
+}
+.formulario__checkbox{
+    position: relative;
+    margin-top: 5px;
+}
+
+.formulario__checkbox__actividad{
+    
+    display: inline-block;
+    font-size: 1.4rem;
+    width:40%;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.formulario__checkbox__eleccion{
+    
+    display: inline-block;
+    font-size: 1.3rem;
+    position: absolute;
+    bottom: 26px;
+}
+
+.formulario__mail{
+    font-size: 1.5rem;
+    margin-left: 16px;
+    margin-top: 20px;
+}
+
+.formulario__mail input{
+    width: 300px;
+    height: 25px;
+    position: absolute;
+    top: 312px;
+    left: 18.7rem;
+    font-weight: bold;
+    font-family: poppins;
+    background-color:grey;
+    border-radius: 20px;
+}
+
+.formulario__select{
+    font-size: 1.4rem;
+    margin-left: 8px;
+    margin-top: 20px;
+}
+
+.formulario__select select{
+    position: absolute;
+    right: 372px;
+    top: 365px;
+    width: 130px;
+    height: 25px;
+    background-color:grey;
+    border-radius: 20px;
+}
+
+
+.formulario__textarea{
+    font-size: 2rem;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.formulario__textarea__text textarea{
+    max-height: 80px;
+    max-width: 600px;
+    min-width: 600px;
+    min-height: 80px;
+    font-family: poppins;
+    font-weight: 400;
+}
+.formulario__reset{
+    display: inline;
+    
+    
+}
+.formulario__reset__submit input{
+    font-size: 25px;
+    font-family: poppins;
+    font-weight: 300;
+    border-radius: 15px;
+    border: none;
+    background-color: black;
+    color: white;
+    width: 10rem;
+}
+
+.formulario__submit{
+    display: inline;
+}
+
+
+.formulario__botones{
+    text-align: center;
+    display: flex;
+    justify-content:space-evenly;
+}
+
+/*Sector anterior a prefooter, comparten todas las paginas*/
+
+.financiamiento{
+    position: relative;
+    width: 100%;
+    height: 300px;
+}
+
+.financiamiento__titulo{
+    position: absolute;
+    left: 345px;
+    top: 50px;
+    font-size: 30px;
+    font-weight: 300;
+   
+}
+
+.financiamiento__formasdepago{
+    position:absolute;
+    right: 230px;
+    top: 25px;
+    width:600px;
+    height: 200px;
+    
+}
+.financiamiento__formasdepago__lista li{
+    padding: 16px;
+}
+
+.financiamiento__formasdepago__lista img{
+    width: 80px;
+    height: 60px;
+}
+
+.financiamiento__formasdepago__listados li{
+    padding: 23px;
+}
+
+.financiamiento__boton{
+    position: absolute;
+    bottom: 50px;
+    right: 800px;
+    
+
+}
+
+.financiamiento__boton__bancos{
+    border: none;
+    border-radius: 15px;
+    width: 300px;
+    height: 40px;
+    background-color: rgba(0, 0, 0, 0.808);
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+/*prefooter que comparten todas las paginas*/
+
+.prefooter{
+    background-color: #D9D9D9;
+    width: 100%;
+    height: 150px;
+    position: relative;
+}
+
+.prefooter__legales{
+    width: 1400px;
+    height: 120px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 15px;
+}
+
+.prefooter__legales__textouno{
+    
+    word-spacing: 5px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.prefooter__legales__textodos{
+    text-align: center;
+    font-weight: bold;
+}
+
+.boton__arrepentimiento{
+    position: absolute;
+    left: 830px;
+    top: 105px;
+    
+    
+}
+
+.boton__arrepentimiento button{
+    background-color: rgba(255, 0, 0, 0.712);
+    border: none;
+    border-radius: 15px;
+    font-weight: bolder;
+    color: white;
+    width: 250px;
+    height: 35px;
+}
+
+/* COMIENZO DEL FOOTER COMPARTIDO POR TODAS LAS PAGINAS*/
+.footer{
+    background-color: rgba(0, 0, 0, 0.733);
+    width: 100%;
+    height: 90px;
+    position: relative;
+}
+
+.footer .footer__texto{
+    font-family: 'DM Sans', sans-serif;
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    left: 25%;
+    top: 25%;
+}

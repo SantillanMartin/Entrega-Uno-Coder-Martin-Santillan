@@ -1,0 +1,8 @@
+header {
+  background-color: teal; }
+
+div {
+  background-color: red;
+  width: 100%; }
+  div p {
+    font-size: 10px; }
