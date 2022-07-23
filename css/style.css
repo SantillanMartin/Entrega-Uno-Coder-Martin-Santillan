@@ -1,8 +1,177 @@
-header {
-  background-color: teal; }
+/*Colores*/
+/*Fuentes*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
 
-div {
-  background-color: red;
-  width: 100%; }
-  div p {
-    font-size: 10px; }
+html {
+  font-size: 62.5%;
+  overflow-x: hidden; }
+
+body {
+  font-family: "poppins", sans-serif; }
+
+a {
+  text-decoration: none; }
+
+ul {
+  list-style-type: none; }
+
+.header__imagen--destinos {
+  background-image: url(../imagenes/playa.jpg);
+  background-size: cover;
+  width: 100vw;
+  height: 50rem;
+  background-repeat: no-repeat; }
+
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  .header .header__nav__contenedor {
+    background-color: rgba(0, 0, 0, 0.699);
+    width: 100%;
+    height: 12rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap; }
+    .header .header__nav__contenedor .header__logo {
+      width: 25rem;
+      font-size: 3rem;
+      color: white;
+      font-family: 'Poppins', sans-serif;
+      margin-left: 4rem;
+      transition: 2s; }
+    .header .header__nav__contenedor .header__nav {
+      margin-right: 4rem; }
+      .header .header__nav__contenedor .header__nav .header__nav__lista {
+        display: flex;
+        flex-wrap: wrap;
+        font-family: 'poppins',sans-serif;
+        list-style: none; }
+        .header .header__nav__contenedor .header__nav .header__nav__lista a {
+          padding: 2.5rem;
+          font-size: 25px;
+          color: white; }
+        .header .header__nav__contenedor .header__nav .header__nav__lista li {
+          transition: 0.4s; }
+
+.header__nav__lista li:hover {
+  transform: scale(1.2); }
+
+/*Buscador dentro del header, es el container de todos 
+los input de cada seccion para buscar determinado servicio.*/
+.buscador {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 20px;
+  width: 112rem;
+  height: 25rem;
+  margin-top: 8.5rem;
+  max-width: 1400px; }
+  .buscador .buscador__titulo {
+    margin-left: 1rem;
+    font-size: 2.3rem;
+    font-weight: normal; }
+  .buscador .buscador__selector {
+    font-size: 1.7rem; }
+    .buscador .buscador__selector input[type="radio"] {
+      margin: 1rem; }
+  .buscador .buscador__container {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap; }
+    .buscador .buscador__container .buscador__de__vuelos__eleccion {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 157px;
+      height: 5rem;
+      border-radius: 15px;
+      background-color: #AFACAC; }
+      .buscador .buscador__container .buscador__de__vuelos__eleccion input {
+        font-family: 'Poppins', sans-serif;
+        font-size: 15px;
+        width: 14rem;
+        height: 25px;
+        background-color: #AFACAC;
+        border: none;
+        border-radius: 0.7rem; }
+      .buscador .buscador__container .buscador__de__vuelos__eleccion h4 {
+        font-weight: lighter;
+        font-size: 1.4rem; }
+    .buscador .buscador__container .buscador__de__vuelos__imagen {
+      width: 5rem;
+      animation: movimiento 2s linear infinite; }
+  .buscador .buscador__vuelos__container__checkboxboton {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 55%; }
+    .buscador .buscador__vuelos__container__checkboxboton .buscador__de__vuelos__checkbox {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 1.6rem;
+      margin-left: 1rem; }
+      .buscador .buscador__vuelos__container__checkboxboton .buscador__de__vuelos__checkbox input[type="checkbox"] {
+        margin-left: 5px;
+        margin-right: 10px; }
+    .buscador .buscador__vuelos__container__checkboxboton .boton {
+      border-radius: 100px;
+      width: 130px;
+      height: 50px;
+      font-family: 'Poppins', sans-serif;
+      color: white;
+      background-color: rgba(255, 0, 0, 0.712);
+      font-weight: bold;
+      border: none;
+      transition: 0.6s; }
+
+.boton:hover {
+  cursor: pointer;
+  background-color: rgba(238, 34, 34, 0.918);
+  transform: scale(0.9);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.699); }
+
+@keyframes movimiento {
+  0% {
+    transform: translateX(0); }
+  50% {
+    transform: translate(8px, -5px); }
+  100% {
+    transform: translateX(0); } }
+
+.fondo__pagina {
+  background-image: url(../imagenes/paris.jpg);
+  background-size: 100vw 100vh;
+  background-repeat: no-repeat; }
+
+.contenido__principal {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  width: 100%;
+  height: 100vh;
+  margin-left: 2rem; }
+  .contenido__principal img {
+    width: 40rem;
+    height: 33rem; }
+  .contenido__principal h2 {
+    font-size: 10rem;
+    width: 70rem; }
+
+.grid__container {
+  margin-top: 2rem;
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  grid-template-rows: repeat(4, auto);
+  row-gap: 6rem;
+  column-gap: 2.5rem; }

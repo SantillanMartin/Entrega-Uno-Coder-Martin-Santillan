@@ -1,12 +1,5 @@
-header{
-    background-color: teal;
-}
-
-
-div{
-    background-color: red;
-    width: 100%;
-    p{
-        font-size: 10px;
-    }
-}
+@import './misc/variables';
+@import './misc/normaliza';
+@import './partials/header';
+@import './views/index-main';
+@import './views/destinos'

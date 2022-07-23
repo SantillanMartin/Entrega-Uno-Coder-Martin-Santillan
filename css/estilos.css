@@ -1009,6 +1009,7 @@ button:hover{
     background-color: black;
     color: white;
     width: 10rem;
+    transition: 0.4s;
 }
 
 .formulario__submit{
@@ -1020,6 +1021,12 @@ button:hover{
     text-align: center;
     display: flex;
     justify-content:space-evenly;
+}
+
+.formulario__reset__submit input:hover{
+    cursor: pointer;
+    box-shadow: 1px 4px 5px #00000054;
+    transform: scale(0.98);
 }
 
 /*Sector anterior a prefooter, comparten todas las paginas*/
