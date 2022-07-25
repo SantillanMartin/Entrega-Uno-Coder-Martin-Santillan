@@ -1,0 +1,465 @@
+/* MEDIAS QUERIES*/
+
+@media(max-width:1630px){
+    .financiamiento__titulo{
+        text-align: center;
+        justify-content: center;
+    }
+    body{
+        overflow-x: hidden;
+    }
+}
+
+@media(max-width:1205px){
+    .grid__container .ofertas__lugares__container__grid{
+        grid-column: 2/4;
+        
+    }
+    .grid__container .ofertas__mes {
+        grid-column: 2/4;
+        width: 105rem;
+        height: 55rem;
+    }
+    .grid__container .ofertas__mes .ofertas__mes__imagen img {
+        height: 30rem;
+        width: 31rem;
+        border-radius: 2rem;
+    }
+    .grid__container .cuotas__interes{
+        grid-column: 2/3;
+    }
+    .grid__container .cuotas__paisaje{
+        grid-column: 3/4;
+    }
+    .financiamiento{
+        grid-column: 2/3;
+    }
+   
+}
+@media(max-width:1105px){
+    .grid__container .ofertas__mes{
+        width: 89rem;
+        height: 65rem;
+    }
+    .grid__container .cuotas__interes, .grid__container .cuotas__paisaje{
+        width: 30rem;
+    }
+    .grid__container .cuotas__interes .cuotas__interes__subfondo{
+        width: 28rem;
+    }
+    .grid__container .cuotas__interes .cuotas__interes__subfondo .cuotas__interes__subfondo__texto{
+        width: auto;
+        font-size: 3.5rem;
+    }
+    .grid__container .cuotas__interes, .grid__container .cuotas__paisaje img{
+        width: 28rem;
+        
+    }
+    
+}
+@media (max-width:1026px){
+    
+    .prefooter{
+        height: auto;
+    }
+}
+
+
+
+
+@media(max-width:1160px){
+    .buscador{
+        height: 40rem;
+        width: 95%;
+        margin-bottom: 2rem;
+    }
+    .header{
+        height: auto;
+    }
+}
+
+@media(max-width:1060px){
+    .header .header__nav__contenedor{
+        flex-direction: column;
+        align-items: center;
+    }
+    .buscador .buscador__container{
+        justify-content: center;
+        
+    }
+    .buscador .buscador__container .buscador__de__vuelos__imagen{
+        display: none;
+    }
+    .buscador .buscador__container .buscador__de__vuelos__eleccion{
+        margin: 0.2rem;
+        width: 25rem;
+    }
+    .financiamiento{
+        height: auto;
+    }
+    .footer{
+        width: 100%;
+        height: 20rem;
+        text-align: center;
+    }
+    .financiamiento .financiamiento__titulo {
+        justify-content: center;
+    }
+    .grid__container .ofertas__mes{
+        width: 71rem;
+        height: 85rem;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    .grid__container .ofertas__mes img{
+        width: 45rem;
+        height: 36rem;
+        margin-bottom: 2rem;
+
+    }
+}
+
+/*TABLET */
+@media(max-width:768px){
+    .header .header__nav__contenedor{
+        height: auto;
+    }
+    .header .header__nav__contenedor .header__nav .header__nav__lista {
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        
+    }
+   
+    .grid__container .ofertas__mes{
+        width: 66rem;
+        height: 91rem;
+    }
+}
+@media(max-width:700px){
+    .buscador .buscador__vuelos__container__checkboxboton{
+        flex-wrap: nowrap;
+        width: 100%;
+        justify-content: space-around;
+    }
+    .buscador{
+        height: 50rem;
+        width: 95%;
+    }
+    .prefooter{
+        height: auto;
+    }
+    
+    .grid__container .ofertas__mes{
+        width: 55rem;
+    }
+    .grid__container .cuotas__paisaje{
+        grid-column: 1/5;
+        width: 50rem;
+    }
+    .grid__container .cuotas__paisaje img{
+        width: 47rem;
+    }
+    .grid__container .cuotas__interes {
+        grid-column: 1/5;
+        width: 50rem;
+    }
+    .grid__container .cuotas__interes .cuotas__interes__subfondo{
+        width: 47rem;
+    }
+    .contenido__principal{
+        
+        flex-wrap: wrap;
+    }
+    .contenido__principal__titulo{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .contenido__principal h2{
+        font-size: 5rem;
+        width: 70rem;
+        
+        
+    }
+    .contenido__principal img{
+        width: 20rem;
+        height: 15rem;
+    }
+    
+    
+    
+     
+}
+@media(max-width:630px){
+    .contenido__principal{
+        margin-left: 0;
+    }
+    .contenido__principal h2{
+        
+        width: 50rem;
+        margin: auto;
+        
+    }
+    .contenido__principal img{
+        width: 20rem;
+        height: 15rem;
+        margin: auto;
+    }
+}
+
+@media(max-width:600px){
+    .buscador{
+        height: 70rem;
+    }
+    .buscador .buscador__container {
+        flex-direction: row;
+    }
+    
+    .buscador .buscador__container .buscador__de__vuelos__eleccion{
+        width: 100%;
+        margin: 1rem;
+    }
+    .buscador__de__vuelos__eleccion--width{
+        border:  solid black;
+        width: 40%;
+        
+    }
+    .buscador .buscador__container .buscador__de__vuelos__eleccion input{
+        width: 70%;
+    }
+    .prefooter{
+        flex-wrap: wrap;
+        height: auto;
+    }
+    .prefooter .boton__arrepentimiento{
+        margin-bottom: 2rem;
+        
+    }
+    .financiamiento .financiamiento__formasdepago {
+        margin-left: 1rem;
+        margin-right: 1rem;
+        margin-bottom: 2rem;
+        justify-content: space-evenly;
+     }
+     .grid__container .ofertas__mes{
+        width: 40rem;
+     }
+     .grid__container .ofertas__mes img{
+        width: 27rem;
+        height: 20rem;
+     }
+     .grid__container .ofertas__mes .ofertas__mes__container__texto .ofertas__mes__titulo{
+        font-size: 4rem;
+     }
+     .grid__container .ofertas__mes .ofertas__mes__container__texto .ofertas__mes__subtitulo{
+        width: 30rem;
+        font-size: 2rem;
+     }
+     .grid__container .ofertas__mes .ofertas__mes__container__texto .ofertas__mes__descuento {
+        display: flex;
+        flex-direction: column;
+        
+     }
+     .grid__container .ofertas__mes .ofertas__mes__container__texto .ofertas__mes__hotel{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        width: 28rem;
+        text-align: center;
+     }
+     .grid__container .container__titulo{
+        margin: auto;
+        width: 30rem;
+     }
+     .grid__container .container__titulo .ofertas__titulo{
+        width: 30rem;
+        margin: auto;
+     }
+     .grid__container .container__titulo .ofertas__subtitulo{
+        text-align: center;
+     }
+     .grid__container .cuotas__interes{
+        width: 40rem;
+     }
+     .grid__container .cuotas__interes .cuotas__interes__subfondo{
+        width: 37rem;
+     }
+     .grid__container .cuotas__paisaje{
+        width: 40rem;
+     }
+     .grid__container .cuotas__paisaje img{
+        width: 37rem;
+     }
+}
+ 
+/* MOBILE LARGE*/
+
+@media(max-width:475px){
+    .buscador .buscador__vuelos__container__checkboxboton{
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .buscador .buscador__vuelos__container__checkboxboton .buscador__de__vuelos__checkbox{
+        margin-bottom: 2rem;
+    }
+    .grid__container .ofertas__mes{
+        width: 28rem;
+     }
+     .grid__container .ofertas__mes .ofertas__mes__imagen img{
+        width: 23rem;
+        height: 17rem;
+     }
+     .grid__container .ofertas__mes .ofertas__mes__container__texto .ofertas__mes__titulo {
+        font-size: 3rem;
+     }
+     .grid__container .ofertas__mes .ofertas__mes__container__texto .ofertas__mes__subtitulo{
+        width: 18rem;
+        font-size: 1.6rem;
+     }
+     .grid__container .ofertas__mes .ofertas__mes__container__texto .ofertas__mes__descuento{
+        display: flex;
+        flex-direction: column;
+        font-size: 1.7rem;
+        align-items: center;
+     }
+     .grid__container .ofertas__mes .ofertas__mes__container__texto .ofertas__mes__descuento span{
+        width: 15rem;
+        text-align: center;
+     }
+     .grid__container .ofertas__mes .ofertas__mes__container__texto .ofertas__mes__hotel{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        width: 24rem;
+        text-align: center;
+        font-size: 3rem;
+     }
+     .grid__container .cuotas__interes{
+        width: 28rem;
+        
+     }
+     .grid__container .cuotas__interes .cuotas__interes__subfondo{
+        width: 25rem;
+     }
+     .grid__container .cuotas__interes .cuotas__interes__subfondo .cuotas__interes__subfondo__texto{
+        font-size: 2.5rem;
+        text-align: center;
+        width: 19rem;
+        height: 37rem;
+        margin: auto;
+     }
+     .grid__container .cuotas__paisaje{
+        width: 28rem;
+     }
+     .grid__container .cuotas__paisaje img{
+        width: 25rem;
+     }
+     .ofertas__lugares__promo1,.ofertas__lugares__promo2,.ofertas__lugares__promo3,.ofertas__lugares__promo4{
+        margin-bottom: 5rem;
+     }
+    .footer{
+        width: 100%;
+        height: auto;
+        font-size: 2rem;
+         
+    }
+    .footer p{
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
+    .prefooter{
+        
+        height: auto;
+        justify-content: space-evenly;
+        
+    }
+    .prefooter .prefooter__legales__textouno{
+        margin-top: 2rem;
+    }
+    .prefooter .prefooter__legales__textodos{
+        margin-bottom: 2rem;
+    }
+    .financiamiento{
+        height: 65rem;
+    }
+    .financiamiento .financiamiento__titulo{
+        margin-left: 2rem;
+        margin-right: 1rem;
+        text-align: center;
+    }
+    .financiamiento .financiamiento__formasdepago{
+       margin-left: 1rem;
+       margin-right: 1rem;
+       margin-bottom: 2rem;
+       justify-content: center;
+       height: auto;
+    }
+    .financiamiento .financiamiento__formasdepago .financiamiento__formasdepago__iconos{
+       padding: 1rem;
+    }
+    .contenido__principal{
+        margin-left: 0;
+        
+    }
+    .contenido__principal h2{
+        font-size: 3rem;
+        width: 38rem;
+        margin: auto;
+        text-align: center;
+        
+    }
+    .contenido__principal img{
+        width: 14rem;
+        height: 10rem;
+        margin-left: auto;
+        
+    }
+}
+
+
+
+@media(max-width:370px){
+    
+    .grid__container .container__titulo .ofertas__titulo{
+        font-size: 3rem;
+    }
+    .grid__container .container__titulo .ofertas__subtitulo{
+        font-size: 2rem;
+    }
+    .contenido__principal{
+        margin-left: 0;
+    }
+    .contenido__principal h2{
+        
+        width: 20rem;
+        margin: auto;
+        
+    }
+    .contenido__principal img{
+        width: 14rem;
+        height: 10rem;
+        margin:auto;
+    }
+}
+@media(max-width:330px){
+    
+    .financiamiento{
+        height: 60rem;
+    }
+    .prefooter .boton__arrepentimiento button{
+        width: 20rem;
+    }
+    .prefooter .prefooter__legales__textouno{
+        font-size: 1.5rem;
+    }
+    .prefooter .prefooter__legales__textodos{
+        font-size: 1.5rem;
+    }
+    .footer{
+        font-size: 1.4rem;
+    }
+    .financiamiento .financiamiento__boton__bancos{
+        width: 20rem;
+        font-size: 1.5rem;
+    }
+}

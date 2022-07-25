@@ -292,22 +292,6 @@ button:hover{
     flex-wrap: wrap;
 }
 
-.ofertas__lugares__promo1{
-    
-    font-family: var(--font-principal);
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 3rem;
-   
-    
-}
-
-
-
-.ofertas__lugares__promo2,.ofertas__lugares__promo3,.ofertas__lugares__promo4{
-    
-    font-family: var(--font-principal);
-}
 
 
 .ofertas__lugares--promo--tamaño{
