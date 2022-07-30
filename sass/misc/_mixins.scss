@@ -1,0 +1,37 @@
+@mixin HeaderFondo() {
+    
+    background-size:cover;
+    width: 100vw;
+    height: 50rem;
+    background-repeat: no-repeat;
+}
+
+@mixin FlexJustiBetween() {
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+@mixin BotonRojo($ancho,$altura) {
+            border-radius: 12px;
+            width:$ancho;
+            height:$altura;
+            font-family:$font-principal;
+            color: white;
+            background-color:$opacity-red-buttons;
+            font-weight:bold;
+            border: none;
+            transition: 0.3s;
+}
+
+@mixin HoverBotonRojo() {
+    cursor: pointer;
+    background-color:$opacity-orange-buttons;
+    transform: scale(0.90);
+    box-shadow: 1px 3px 2px $opacity-black;
+}
+
+@mixin HoverBotonGris {
+    cursor: pointer;
+    transform: scale(0.97);
+}
