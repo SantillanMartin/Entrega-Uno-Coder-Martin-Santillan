@@ -2,14 +2,42 @@
 
 $primary: black;
 $secondary: #ff0000;
-$opacity-black:rgba(0, 0, 0, 0.699);
+$opacity-black:rgba(0, 0, 0, 0.712);
+$opacity-black-header: rgba(0, 0, 0, 0.418);
 $opacity-white: rgba(255, 255, 255, 0.9);
 $opacity-black-footer:rgba(0, 0, 0, 0.836);
 $opacity-red-buttons:rgba(238, 34, 34, 0.918);
+$opacity-orange-buttons: rgb(255, 136, 0);
 $opacity-red:rgba(238, 34, 34, 0.767);
 $text-color:white;
 
 /*Fuentes*/
 
 $font-principal:'poppins',sans-serif;
+
+/*Tamaño de fuentes*/
+$size-base:1rem;
+$x-small:0.6rem;
+$small:0.8rem;
+$medium:1.5rem;
+$large:2.5rem;
+$x-large:3rem;
+$xx-large:4rem;
+
+/*Fondos*/
+
+$fondo-autos: url(../img/bariloche.jpeg);
+
+/*Maps*/
+
+$font-size:(
+    "base":$size-base,
+    "x-small":$x-small,
+    "small":$small,
+    "medium":$medium,
+    "large":$large,
+    "x-large":$x-large,
+    "xx-large":$xx-large,
+    
+);
 
