@@ -1,7 +1,12 @@
 @charset "UTF-8";
 /*Colores*/
 /*Fuentes*/
+/*Tamaño de fuentes*/
+/*Fondos*/
+/*Maps*/
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@200&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -27,12 +32,19 @@ ul {
   height: 50rem;
   background-repeat: no-repeat; }
 
+.header__imagen--autos {
+  background-image: url(../../imagenes/route_66.avif);
+  background-size: cover;
+  width: 100vw;
+  height: 50rem;
+  background-repeat: no-repeat; }
+
 .header {
   display: flex;
   flex-direction: column;
   align-items: center; }
   .header .header__nav__contenedor {
-    background-color: rgba(0, 0, 0, 0.699);
+    background-color: rgba(0, 0, 0, 0.418);
     width: 100%;
     height: 12rem;
     display: flex;
@@ -55,31 +67,30 @@ ul {
         list-style: none; }
         .header .header__nav__contenedor .header__nav .header__nav__lista a {
           padding: 2.5rem;
-          font-size: 25px;
+          font-size: 2.5rem;
           color: white; }
         .header .header__nav__contenedor .header__nav .header__nav__lista li {
           transition: 0.4s; }
-
-.header__nav__lista li:hover {
-  transform: scale(1.2); }
+        .header .header__nav__contenedor .header__nav .header__nav__lista li:hover {
+          transform: scale(1.2); }
 
 /*Buscador dentro del header, es el container de todos 
 los input de cada seccion para buscar determinado servicio.*/
 .buscador {
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
   justify-content: space-evenly;
   background-color: rgba(255, 255, 255, 0.9);
-  border-radius: 20px;
+  border-radius: 1.3rem;
   width: 112rem;
   height: 25rem;
   margin-top: 8.5rem;
-  max-width: 1400px; }
+  max-width: 1600px;
+  /* Esta parte pertenece a la seccion autos, son inputs dentro de buscador*/ }
   .buscador .buscador__titulo {
     margin-left: 1rem;
     font-size: 2.3rem;
-    font-weight: normal; }
+    font-weight: 300; }
   .buscador .buscador__selector {
     font-size: 1.7rem; }
     .buscador .buscador__selector input[type="radio"] {
@@ -124,22 +135,82 @@ los input de cada seccion para buscar determinado servicio.*/
       .buscador .buscador__vuelos__container__checkboxboton .buscador__de__vuelos__checkbox input[type="checkbox"] {
         margin-left: 5px;
         margin-right: 10px; }
-    .buscador .buscador__vuelos__container__checkboxboton .boton {
+    .buscador .buscador__vuelos__container__checkboxboton .buscador__boton__destinos {
       border-radius: 12px;
       width: 130px;
       height: 50px;
-      font-family: 'Poppins', sans-serif;
+      font-family: "poppins", sans-serif;
       color: white;
-      background-color: rgba(255, 0, 0, 0.712);
+      background-color: rgba(238, 34, 34, 0.918);
       font-weight: bold;
       border: none;
       transition: 0.3s; }
-
-.boton:hover {
-  cursor: pointer;
-  background-color: rgba(238, 34, 34, 0.918);
-  transform: scale(0.9);
-  box-shadow: 1px 3px 2px rgba(0, 0, 0, 0.699); }
+      .buscador .buscador__vuelos__container__checkboxboton .buscador__boton__destinos:hover {
+        cursor: pointer;
+        background-color: #ff8800;
+        transform: scale(0.9);
+        box-shadow: 1px 3px 2px rgba(0, 0, 0, 0.712); }
+  .buscador .buscador__container__inputs {
+    display: flex;
+    justify-content: space-around; }
+    .buscador .buscador__container__inputs .buscador__boton__autos {
+      border-radius: 12px;
+      width: 120px;
+      height: 50px;
+      font-family: "poppins", sans-serif;
+      color: white;
+      background-color: rgba(238, 34, 34, 0.918);
+      font-weight: bold;
+      border: none;
+      transition: 0.3s; }
+      .buscador .buscador__container__inputs .buscador__boton__autos:hover {
+        cursor: pointer;
+        background-color: #ff8800;
+        transform: scale(0.9);
+        box-shadow: 1px 3px 2px rgba(0, 0, 0, 0.712); }
+  .buscador .buscador__autos__eleccion {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 13.8rem;
+    height: 5rem;
+    border-radius: 15px;
+    background-color: #AFACAC; }
+    .buscador .buscador__autos__eleccion h4 {
+      font-weight: 400; }
+    .buscador .buscador__autos__eleccion input {
+      font-family: "poppins", sans-serif;
+      font-size: 15px;
+      width: 13.4rem;
+      height: 2.5rem;
+      background-color: #AFACAC;
+      border: none;
+      color: rgba(0, 0, 0, 0.712); }
+  .buscador .buscador__container__titulo-boton {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
+    width: 65%; }
+  .buscador .boton__agregar__alojamiento {
+    background-color: rgba(0, 0, 0, 0.712);
+    font-size: 20px;
+    font-weight: 700;
+    font-family: "poppins", sans-serif;
+    color: white;
+    border-radius: 2rem;
+    width: 25rem;
+    border: none;
+    transition: 0.4s; }
+    .buscador .boton__agregar__alojamiento:hover {
+      cursor: pointer;
+      transform: scale(0.97); }
+  .buscador .buscador__de__autos__checkbox {
+    font-size: 1.6rem;
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 1rem;
+    font-weight: 200;
+    gap: 0.5rem; }
 
 @keyframes movimiento {
   0% {
