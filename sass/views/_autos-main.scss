@@ -1,0 +1,98 @@
+/* Sector main de autos*/
+.autos{
+    
+    @include D-Flex(column,space-around,null);
+    height: 140rem;
+    margin-top: 6rem;
+    
+    
+    
+    &__container__flex{
+        @include D-Flex(row,space-between,null);
+        flex-wrap:wrap;
+        width:112rem;
+        margin: auto;
+        
+        
+    }
+    &__titulo{
+        font-size: $xx-large;
+        text-align: center;
+        font-weight: 400;
+    }
+    &__titulo--color{
+        color: #ff0000;
+    }
+    
+    &__alquiler__tamaño{
+         @include CardAlquiler();
+         transition: 0.2s;
+         margin-top: 1rem;
+         margin-bottom: 1rem;
+         
+         &:hover{
+            
+            cursor: pointer;
+            transform: scale(1.02);
+            
+         }
+          
+    }
+    &__alquiler__container--texto{
+        @include D-Flex(column,space-evenly,center);
+    }
+    &__alquiler__container--coberturas{
+        @include D-Flex(row,space-around,center);
+        height: 15rem;
+    }
+    &__alquiler__subcontainer--textos{
+        @include D-Flex(column,space-evenly,null);
+        height: 10rem;
+        width: 10rem;
+    }
+    &__container--logos{
+        @include D-Flex(row,space-evenly,center);
+    }
+    
+    &__alquiler1__descuento{
+        font-size:map-get($font-size,xx-large);
+        text-align: center;
+    }
+    &__alquiler1__boton{
+        @include BotonRojo(9rem,4rem);
+        &:hover{
+            cursor: pointer;
+            transform: scale(1.1);
+        }
+    }
+    &__alquiler__lugar{
+        font-size: map-get($font-size,'large');
+        font-weight:$large-width;
+    }
+    &__alquiler__cobertura{
+        font-size: map-get($font-size,'small');
+        font-weight:$large-width;
+    }
+    &__alquiler__precio{
+        font-size: map-get($font-size,'medium');
+        background-color: $opacity-red;
+        border-radius: 0.5rem;
+        color:$text-color;
+        width: 6.5rem;
+        text-align: center;
+    }
+    &__alquiler1__imagenhertz{
+            
+        width: 13.5rem;
+        height: 8.5rem;
+    }
+    &__alquiler__logo{
+        width: 8rem;
+        height: 6.2rem;
+    }
+    &__alquiler__img{
+        width: 26.74rem;
+        height: 250px;
+        border-radius: 0.4rem;
+     }
+}
