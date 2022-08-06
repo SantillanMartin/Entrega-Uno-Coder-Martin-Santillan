@@ -13,6 +13,7 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
+        
         <title>Volando Viajes-Autos</title>
     </head>
 <body>
@@ -26,11 +27,11 @@
             <section class="header__nav">
             
                 <ul class="header__nav__lista">
-                    <li><a href="#">Inicio</a></li>
-                    <li><a href="#">Destinos</a></li>
-                    <li><a href="#">Hoteles</a></li>
-                    <li><a href="#">Autos</a></li>
-                    <li><a href="#">Contacto</a></li>
+                    <li><a href="../index.html">Inicio</a></li>
+                    <li><a href="../destinos/destinos.html">Destinos</a></li>
+                    <li><a href="../hoteles/hoteles.html">Hoteles</a></li>
+                    <li><a href="./autos.html">Autos</a></li>
+                    <li><a href="../formularios/contacto.html">Contacto</a></li>
                 </ul>
         
             </section>
@@ -93,123 +94,234 @@
 
     </header>
     
-    <section class="autos">
-                
-        <section class="ofertas__titulo">
-            LAS MEJORES <span class="ofertas__titulo--color">OFERTAS EN AUTOS POR EL MUNDO</span>
-        </section>
+    <main class="autos">
+         
+        <!--Titulos--> 
         
-        <section class="ofertas__lugares">
-            <section class="ofertas__lugares__promo1 ofertas__lugares__promo1--borde">
-                <h2 class="ofertas__lugares__promo1__hertz">
-                    10% OFF ALQUILER AUTO USA
-                </h2>
-                <img class="ofertas__lugares__promo1__imagen__hertz" src="../imagenes/hertz.jpg" alt="hertz">
-                <section class="buscador__autos__boton__vermas">
-                    <button>VER MAS</button>
+        <h2 class="autos__titulo">
+            LAS MEJORES <span class="autos__titulo--color">OFERTAS EN AUTOS POR EL MUNDO</span>
+        </h2>
+        
+            <!--Container Flex Cards-->           
+            <section class="autos__container__flex">
+                 
+                <!--Card 1-->
+                
+                <section class="autos__alquiler__tamaño autos__alquiler__container--texto">
+                    <h2 class="autos__alquiler1__descuento">
+                        10% OFF ALQUILER AUTO USA
+                    </h2>
+                    <img class="autos__alquiler1__imagenhertz" src="../imagenes/hertz.jpg" alt="hertz">
+                    
+                        <button class="autos__alquiler1__boton">VER MAS</button>    
                 </section>
                 
+                <!--Card 2-->
                 
-            </section>
+                 <section class="autos__alquiler__tamaño">
+                    <img class="autos__alquiler__img" src="../imagenes/roma_auto.webp" alt="roma_auto">
+                    <section class="autos__alquiler__container--coberturas">
+                        <section class="autos__alquiler__subcontainer--textos">
+                            <h4 class="autos__alquiler__lugar">
+                                Roma
+                                </h4>
+                                <h5 class="autos__alquiler__cobertura">
+                                    Alquiler Internacional-cobertura total
+                                </h5>
+                        </section>
+                       
+                        <h5 class="autos__alquiler__precio">
+                        $12.000
+                        </h5>
+                    </section>
+                </section>
+                 
+                <!--Card 3-->
 
-            <section class="ofertas__lugares__promo2">
-                <img class="ofertas__lugares__promo2__imagen" src="../imagenes/roma_auto.webp" alt="roma_auto">
-                <h4 class="ofertas__lugares__promo2__titulo">
-                Roma
-                </h4>
-                <h5 class="ofertas__lugares__promo2__subtitulo ofertas__lugares__promo__subtitulo--medida">
-                    Alquiler Internacional-cobertura total
-                </h5>
-                <h5 class="ofertas__lugares__promo2__precio">
-                $12.000
-                </h5>
+                <section class="autos__alquiler__tamaño">
+                    <img class="autos__alquiler__img" src="../imagenes/rio_auto.jpg" alt="rio_auto">
+                    <section class="autos__alquiler__container--coberturas">
+                        <section class="autos__alquiler__subcontainer--textos"> 
+                        <h4 class="autos__alquiler__lugar">
+                            Rio de Janeiro
+                            </h4>
+                            <h5 class="autos__alquiler__cobertura">
+                                Alquiler Internacional-cobertura total
+                            </h5>
+                        </section>
+                            <h5 class="autos__alquiler__precio">
+                            $15.000
+                            </h5>
+                    </section>
+                    
+                </section>
+                 
+                <!--Card 4-->
+                
+                <section class="autos__alquiler__tamaño">
+                    <img class="autos__alquiler__img" src="../imagenes/los_angeles_auto.jpg" alt="los_angeles_auto">
+                    <section class="autos__alquiler__container--coberturas">
+                        <section class="autos__alquiler__subcontainer--textos">
+                            <h4 class="autos__alquiler__lugar">
+                                Los Angeles
+                                </h4>
+                                <h5 class="autos__alquiler__cobertura">
+                                    Alquiler Internacional-cobertura total
+                                </h5>
+                        </section>
+                       
+                            <h5 class="autos__alquiler__precio">
+                            $20.000
+                            </h5>
+                    </section>
+                    
+                </section>
             </section>
-            <section class="ofertas__lugares__promo3">
-                <img class="ofertas__lugares__promo3__imagen" src="../imagenes/rio_auto.jpg" alt="rio_auto">
-                <h4 class="ofertas__lugares__promo3__titulo">
-                Rio de Janeiro
-                </h4>
-                <h5 class="ofertas__lugares__promo3__subtitulo ofertas__lugares__promo__subtitulo--medida">
-                    Alquiler Internacional-cobertura total
-                </h5>
-                <h5 class="ofertas__lugares__promo3__precio">
-                $15.000
-                </h5>
-            </section>
-            <section class="ofertas__lugares__promo4">
-                <img class="ofertas__lugares__promo4__imagen" src="../imagenes/los_angeles_auto.jpg" alt="los_angeles_auto">
-                <h4 class="ofertas__lugares__promo4__titulo">
-                Los Angeles
-                </h4>
-                <h5 class="ofertas__lugares__promo4__subtitulo ofertas__lugares__promo__subtitulo--medida">
-                    Alquiler Internacional-cobertura total
-                </h5>
-                <h5 class="ofertas__lugares__promo4__precio">
-                $20.000
-                </h5>
-            </section>
-        </section>
-        
-        <section class="ofertas__titulo">
-           ¡ARGENTINA EN AUTO<span class="ofertas__titulo--color"> 12 CUOTAS SIN INTERES!</span>
-        </section>
+           <!--Titulos-->  
+        <h2 class="autos__titulo">
+            ¡ARGENTINA EN AUTO<span class="autos__titulo--color"> 12 CUOTAS SIN INTERES!</span>
+        </h2>
         
         
-        <section class="ofertas__lugares">
-            <section class="ofertas__lugares__promo1 ofertas__lugares__promo1--borde">
-                <h2 class="ofertas__lugares__promo1__hertz ofertas__lugares__promo1__hertz--tamaño">
+        <!--Container Flex Cards-->
+        <section class="autos__container__flex">
+            
+            <!--Card 5-->
+            
+            <section class="autos__alquiler__tamaño autos__alquiler__container--texto">
+                <h2 class="autos__alquiler1__descuento">
                     $5000 REGALO + 12 CUOTAS ARGENTINA
                 </h2>
-                <section class="ofertas__lugares__imagenes">
-                    <img class="ofertas__lugares__promo1__imagen__logo" src="../imagenes/hertz.jpg" alt="hertz">
-                    <img class="ofertas__lugares__promo1__imagen__logo" src="../imagenes/avis_logo.webp" alt="avis_logo">
-                    <img class="ofertas__lugares__promo1__imagen__logo" src="../imagenes/budget_logo.jpg" alt="budget_logo">
+                    <section class="autos__container--logos">
+                        <img class="autos__alquiler__logo" src="../imagenes/hertz.jpg" alt="hertz_logo">
+                        <img class="autos__alquiler__logo" src="../imagenes/avis_logo.webp" alt="avis_logo">
+                        <img class="autos__alquiler__logo" src="../imagenes/budget_logo.jpg" alt="budget_logo">
+                    </section>
+                    <button class="autos__alquiler1__boton">VER MAS</button>     
+            </section>
+            
+            <!--Card 6-->
+            
+            <section class="autos__alquiler__tamaño">
+                <img class="autos__alquiler__img" src="../imagenes/calafate.jpg" alt="calafate">
+                <section class="autos__alquiler__container--coberturas">
+                    <section class="autos__alquiler__subcontainer--textos">
+                        <h4 class="autos__alquiler__lugar">
+                            El Calafate
+                        </h4>
+                        <h5 class="autos__alquiler__cobertura">
+                            Cobertura total daño y robo
+                        </h5>
+                    </section>
+                    <h5 class="autos__alquiler__precio">
+                    $5.000
+                    </h5>
                 </section>
-                <section class="buscador__autos__boton__vermas">
-                    <button>VER MAS</button>
+            </section>
+             
+            <!--Card 7-->
+            
+            <section class="autos__alquiler__tamaño">
+                <img class="autos__alquiler__img" src="../imagenes/salta_auto.jpg" alt="salta_auto">
+                <section class="autos__alquiler__container--coberturas">
+                    <section class="autos__alquiler__subcontainer--textos">
+                        <h4 class="autos__alquiler__lugar">
+                            Salta
+                        </h4>
+                        <h5 class="autos__alquiler__cobertura">
+                            Cobertura total daño y robo
+                        </h5>
+                    </section>
+                    <h5 class="autos__alquiler__precio">
+                    $8.700
+                    </h5>
                 </section>
-                
-                
             </section>
-
-            <section class="ofertas__lugares__promo2">
-                <img class="ofertas__lugares__promo2__imagen" src="../imagenes/calafate.jpg" alt="calafate">
-                <h4 class="ofertas__lugares__promo2__titulo">
-                El Calafate
-                </h4>
-                <h5 class="ofertas__lugares__promo2__subtitulo ofertas__lugares__promo__subtitulo--medida">
-                    Cobertura total daño y robo
-                </h5>
-                <h5 class="ofertas__lugares__promo2__precio">
-                $5.000
-                </h5>
-            </section>
-            <section class="ofertas__lugares__promo3">
-                <img class="ofertas__lugares__promo3__imagen" src="../imagenes/salta_auto.jpg" alt="salta_auto">
-                <h4 class="ofertas__lugares__promo3__titulo">
-                Salta
-                </h4>
-                <h5 class="ofertas__lugares__promo3__subtitulo ofertas__lugares__promo__subtitulo--medida">
-                    Cobertura total daño y robo
-                </h5>
-                <h5 class="ofertas__lugares__promo3__precio">
-                $8.700
-                </h5>
-            </section>
-            <section class="ofertas__lugares__promo4">
-                <img class="ofertas__lugares__promo4__imagen" src="../imagenes/buenos_aires.jpg" alt="buenos_aires">
-                <h4 class="ofertas__lugares__promo4__titulo">
-                Los Angeles
-                </h4>
-                <h5 class="ofertas__lugares__promo4__subtitulo ofertas__lugares__promo__subtitulo--medida">
-                    Cobertura total daño y robo
-                </h5>
-                <h5 class="ofertas__lugares__promo4__precio">
-                $9.000
-                </h5>
+             
+            <!--Card 8-->
+            
+            <section class="autos__alquiler__tamaño">
+                <img class="autos__alquiler__img" src="../imagenes/buenos_aires.jpg" alt="salta_auto">
+                <section class="autos__alquiler__container--coberturas">
+                    <section class="autos__alquiler__subcontainer--textos">
+                        <h4 class="autos__alquiler__lugar">
+                            Buenos Aires
+                        </h4>
+                        <h5 class="autos__alquiler__cobertura">
+                            Cobertura total daño y robo
+                        </h5>
+                    </section>
+                    <h5 class="autos__alquiler__precio">
+                    $10.000
+                    </h5>
+                </section>
             </section>
         </section>
-    </section>
+        
+    </main>
+
+    <section class="financiamiento">
+        <section class="financiamiento__titulo">
+            Tenemos la mejor financiacion para tu viaje
+        </section>
+        <section class="financiamiento__formasdepago">
+               
+                <section class="financiamiento__formasdepago__iconos">
+                    <img src="../imagenes/ahora_12.svg" alt="ahora_12">
+                    <h5>12 cuotas</h5>
+                </section>
+                <section class="financiamiento__formasdepago__iconos">
+                    <img src="../imagenes/Ahora18-fondo-blanco.webp" alt="ahora_18">
+                    <h5>18 cuotas</h5>
+                </section>
+                <section class="financiamiento__formasdepago__iconos">
+                    <img src="../imagenes/visa_logodos.jpg" alt="visa_logo">
+                    <h5>Visa</h5>
+                </section>
+                <section class="financiamiento__formasdepago__iconos">
+                    <img src="../imagenes/apple_pay.png" alt="apple_pay">
+                    <h5>Apple Pay</h5>
+                </section>
+                <section class="financiamiento__formasdepago__iconos">
+                    <img src="../imagenes/bitcoin_logo.png" alt="bitcoin">
+                    <h5>Bitcoin</h5>
+                </section>
+                 
+   
+        </section> 
+        <section class="financiamiento__boton">
+            <button class="financiamiento__boton__bancos">VER MAS BANCOS</button>
+
+        </section> 
+
+    </section>    
     
+       
+    <section class="prefooter">
+
+        <section class="prefooter__legales__textouno">
+            ¿Te arrepentiste de tu compra?
+        </section>
+        
+        <section class="prefooter__legales__textodos">
+            De acuerdo al derecho de arrepentimiento , podés cancelar tu compra dentro de los 10 días corridos de haberla realizado.
+
+            * Según Resolución 329/2020 ANAC el derecho de arrepentimiento no aplica para vuelos y estos se rigen por la política de devolución informada en tu voucher.
+        </section>    
+        
+        <button class="boton__arrepentimiento">BOTON DE ARREPENTIMIENTO</button>
+    
+    </section>    
+
+<footer class="footer">
+<p>
+    |Politica de Seguridad |Politica de Privacidad |Terminos y Condiciones
+    del Uso del Sitio |Todos los Derechos Reservados TM°
+</p>
+    
+</section>
+
+</footer>
+
 </body>
 </html>

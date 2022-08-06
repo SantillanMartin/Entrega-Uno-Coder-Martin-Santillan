@@ -2,6 +2,7 @@
 /*Colores*/
 /*Fuentes*/
 /*Tamaño de fuentes*/
+/*ancho fuentes*/
 /*Fondos*/
 /*Maps*/
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
@@ -25,26 +26,30 @@ a {
 ul {
   list-style-type: none; }
 
-.header__imagen--destinos {
-  background-image: url(../imagenes/playa.jpg);
-  background-size: cover;
-  width: 100vw;
-  height: 50rem;
-  background-repeat: no-repeat; }
-
-.header__imagen--autos {
-  background-image: url(../../imagenes/route_66.avif);
-  background-size: cover;
-  width: 100vw;
-  height: 50rem;
-  background-repeat: no-repeat; }
-
 .header {
   display: flex;
   flex-direction: column;
   align-items: center; }
+  .header__imagen--destinos {
+    background-image: url(../imagenes/playa.jpg);
+    background-size: cover;
+    width: 100vw;
+    height: 50rem;
+    background-repeat: no-repeat; }
+  .header__imagen--autos {
+    background-image: url(../../imagenes/route_66.avif);
+    background-size: cover;
+    width: 100vw;
+    height: 50rem;
+    background-repeat: no-repeat; }
+  .header__imagen--hoteles {
+    background-image: url(../../imagenes/las__vegas.avif);
+    background-size: cover;
+    width: 100vw;
+    height: 50rem;
+    background-repeat: no-repeat; }
   .header .header__nav__contenedor {
-    background-color: rgba(0, 0, 0, 0.418);
+    background-color: rgba(0, 0, 0, 0.116);
     width: 100%;
     height: 12rem;
     display: flex;
@@ -54,7 +59,7 @@ ul {
     .header .header__nav__contenedor .header__logo {
       width: 25rem;
       font-size: 3rem;
-      color: white;
+      color: #ffffff;
       font-family: 'Poppins', sans-serif;
       margin-left: 4rem;
       transition: 2s; }
@@ -67,8 +72,8 @@ ul {
         list-style: none; }
         .header .header__nav__contenedor .header__nav .header__nav__lista a {
           padding: 2.5rem;
-          font-size: 2.5rem;
-          color: white; }
+          font-size: 2rem;
+          color: #ffffff; }
         .header .header__nav__contenedor .header__nav .header__nav__lista li {
           transition: 0.4s; }
         .header .header__nav__contenedor .header__nav .header__nav__lista li:hover {
@@ -80,21 +85,25 @@ los input de cada seccion para buscar determinado servicio.*/
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-  background-color: rgba(255, 255, 255, 0.9);
+  background-color: rgba(255, 255, 255, 0.952);
   border-radius: 1.3rem;
   width: 112rem;
   height: 25rem;
   margin-top: 8.5rem;
   max-width: 1600px;
-  /* Esta parte pertenece a la seccion autos, son inputs dentro de buscador*/ }
+  /* Esta parte pertenece a la seccion autos, son inputs dentro de buscador*/
+  /*Botones dentro de los buscadores Destinos,Hoteles,Autos,*/ }
   .buscador .buscador__titulo {
     margin-left: 1rem;
     font-size: 2.3rem;
     font-weight: 300; }
   .buscador .buscador__selector {
-    font-size: 1.7rem; }
+    font-size: 1.7rem;
+    font-weight: 400;
+    color: #3a3a3a; }
     .buscador .buscador__selector input[type="radio"] {
-      margin: 1rem; }
+      margin: 1rem;
+      accent-color: #808080; }
   .buscador .buscador__container {
     display: flex;
     justify-content: space-evenly;
@@ -113,62 +122,36 @@ los input de cada seccion para buscar determinado servicio.*/
         width: 14rem;
         height: 25px;
         background-color: #AFACAC;
-        border: none;
-        border-radius: 0.7rem; }
+        border: 0;
+        border-radius: 0.7rem;
+        outline: 0; }
       .buscador .buscador__container .buscador__de__vuelos__eleccion h4 {
-        font-weight: lighter;
-        font-size: 1.4rem; }
+        font-weight: 400; }
     .buscador .buscador__container .buscador__de__vuelos__imagen {
       width: 5rem;
       animation: movimiento 2s linear infinite; }
-  .buscador .buscador__vuelos__container__checkboxboton {
+  .buscador__container__checkboxboton {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     width: 55%; }
-    .buscador .buscador__vuelos__container__checkboxboton .buscador__de__vuelos__checkbox {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      font-size: 1.6rem;
-      margin-left: 1rem; }
-      .buscador .buscador__vuelos__container__checkboxboton .buscador__de__vuelos__checkbox input[type="checkbox"] {
-        margin-left: 5px;
-        margin-right: 10px; }
-    .buscador .buscador__vuelos__container__checkboxboton .buscador__boton__destinos {
-      border-radius: 12px;
-      width: 130px;
-      height: 50px;
-      font-family: "poppins", sans-serif;
-      color: white;
-      background-color: rgba(238, 34, 34, 0.918);
-      font-weight: bold;
-      border: none;
-      transition: 0.3s; }
-      .buscador .buscador__vuelos__container__checkboxboton .buscador__boton__destinos:hover {
-        cursor: pointer;
-        background-color: #ff8800;
-        transform: scale(0.9);
-        box-shadow: 1px 3px 2px rgba(0, 0, 0, 0.712); }
-  .buscador .buscador__container__inputs {
+  .buscador__checkbox {
     display: flex;
-    justify-content: space-around; }
-    .buscador .buscador__container__inputs .buscador__boton__autos {
-      border-radius: 12px;
-      width: 120px;
-      height: 50px;
-      font-family: "poppins", sans-serif;
-      color: white;
-      background-color: rgba(238, 34, 34, 0.918);
-      font-weight: bold;
-      border: none;
-      transition: 0.3s; }
-      .buscador .buscador__container__inputs .buscador__boton__autos:hover {
-        cursor: pointer;
-        background-color: #ff8800;
-        transform: scale(0.9);
-        box-shadow: 1px 3px 2px rgba(0, 0, 0, 0.712); }
-  .buscador .buscador__autos__eleccion {
+    justify-content: center;
+    align-items: center;
+    margin-left: 1rem;
+    font-weight: 200;
+    font-size: 1.6rem;
+    color: #3a3a3a; }
+    .buscador__checkbox input[type="checkbox"] {
+      margin-left: 5px;
+      margin-right: 10px;
+      accent-color: #8d8585; }
+  .buscador__container__inputs {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap; }
+  .buscador__autos__eleccion {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -176,42 +159,106 @@ los input de cada seccion para buscar determinado servicio.*/
     height: 5rem;
     border-radius: 15px;
     background-color: #AFACAC; }
-    .buscador .buscador__autos__eleccion h4 {
+    .buscador__autos__eleccion h4 {
       font-weight: 400; }
-    .buscador .buscador__autos__eleccion input {
+    .buscador__autos__eleccion input {
       font-family: "poppins", sans-serif;
-      font-size: 15px;
+      font-size: 1.4rem;
       width: 13.4rem;
       height: 2.5rem;
       background-color: #AFACAC;
       border: none;
-      color: rgba(0, 0, 0, 0.712); }
-  .buscador .buscador__container__titulo-boton {
+      outline: 0;
+      color: black; }
+  .buscador__container__inputs__hotel {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap; }
+  .buscador__hotel__eleccion {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 18rem;
+    height: 5rem;
+    border-radius: 0.9rem;
+    background-color: #AFACAC; }
+    .buscador__hotel__eleccion h4 {
+      font-weight: 400; }
+    .buscador__hotel__eleccion input {
+      font-family: "poppins", sans-serif;
+      font-size: 1.4rem;
+      width: 12.5rem;
+      height: 2.5rem;
+      background-color: #AFACAC;
+      border: none;
+      outline: 0;
+      color: black; }
+  .buscador__hotel__eleccion--width {
+    width: 25rem; }
+    .buscador__hotel__eleccion--width input {
+      width: 18rem; }
+  .buscador__container__titulo-boton {
     display: flex;
     justify-content: space-between;
     margin-top: 1rem;
-    width: 65%; }
-  .buscador .boton__agregar__alojamiento {
-    background-color: rgba(0, 0, 0, 0.712);
-    font-size: 20px;
-    font-weight: 700;
-    font-family: "poppins", sans-serif;
-    color: white;
-    border-radius: 2rem;
-    width: 25rem;
-    border: none;
-    transition: 0.4s; }
-    .buscador .boton__agregar__alojamiento:hover {
-      cursor: pointer;
-      transform: scale(0.97); }
-  .buscador .buscador__de__autos__checkbox {
+    width: 58.9%; }
+  .buscador__container__checkbox {
     font-size: 1.6rem;
     display: flex;
     justify-content: flex-start;
     margin-left: 1rem;
     font-weight: 200;
-    gap: 0.5rem; }
+    gap: 0.5rem;
+    accent-color: grey; }
+  .buscador__boton__alojamiento {
+    border-radius: 0.9rem;
+    width: 20rem;
+    height: 3.6rem;
+    color: #ffffff;
+    background-color: #494848;
+    font-weight: 400;
+    font-family: "poppins", sans-serif;
+    font-size: 1.5rem;
+    border: 0;
+    transition: 0.3s; }
+    .buscador__boton__alojamiento:hover {
+      cursor: pointer;
+      transform: scale(0.94); }
+  .buscador__boton__vuelo {
+    border-radius: 0.9rem;
+    width: 20rem;
+    height: 3.6rem;
+    color: #ffffff;
+    background-color: #494848;
+    font-weight: 400;
+    font-family: "poppins", sans-serif;
+    font-size: 1.5rem;
+    border: 0;
+    transition: 0.3s; }
+    .buscador__boton__vuelo:hover {
+      cursor: pointer;
+      transform: scale(0.94); }
+  .buscador__boton__buscar {
+    border-radius: 0.9rem;
+    width: 120px;
+    height: 50px;
+    color: #ffffff;
+    background-color: rgba(238, 34, 34, 0.918);
+    font-weight: 400;
+    font-family: "poppins", sans-serif;
+    font-size: 1.5rem;
+    border: 0;
+    transition: 0.3s; }
+    .buscador__boton__buscar:hover {
+      cursor: pointer;
+      background-color: #ff8800;
+      transform: scale(0.9);
+      box-shadow: 1px 3px 16px rgba(0, 0, 0, 0.37); }
+  .buscador__boton__buscar--width {
+    width: 17rem; }
 
+/*Keyframes dentro del header*/
 @keyframes movimiento {
   0% {
     transform: translateX(0); }
@@ -273,14 +320,19 @@ los input de cada seccion para buscar determinado servicio.*/
     justify-content: space-evenly;
     flex-wrap: wrap; }
     .grid__container .ofertas__lugares__container__grid .ofertas__lugares--promo--tamaño {
-      border-radius: 1.25rem;
-      width: 276px;
-      height: 400px;
-      border: solid rgba(0, 0, 0, 0.3); }
+      border-radius: 1.5rem;
+      width: 26.7rem;
+      height: 40rem;
+      box-shadow: 1px 3px 20px #b1a9a9;
+      transition: 0.3s; }
+      .grid__container .ofertas__lugares__container__grid .ofertas__lugares--promo--tamaño:hover {
+        cursor: pointer;
+        transform: scale(1.02); }
     .grid__container .ofertas__lugares__container__grid .ofertas__lugares__imagen {
-      width: 270px;
+      width: 26.74rem;
       height: 250px;
-      border-radius: 1rem; }
+      border-top-right-radius: 2rem;
+      border-top-left-radius: 2rem; }
     .grid__container .ofertas__lugares__container__grid .ofertas__lugares__container {
       width: 100%;
       height: 30%;
@@ -300,7 +352,7 @@ los input de cada seccion para buscar determinado servicio.*/
         font-size: 1.5rem;
         font-weight: 500;
         background-color: rgba(238, 34, 34, 0.767);
-        color: white;
+        color: #ffffff;
         border-radius: 7px;
         width: 7.1rem;
         text-align: center; }
@@ -323,7 +375,7 @@ los input de cada seccion para buscar determinado servicio.*/
       justify-content: space-evenly;
       height: 100%; }
       .grid__container .ofertas__mes .ofertas__mes__container__texto .ofertas__mes__titulo {
-        color: white;
+        color: #ffffff;
         font-size: 6rem; }
       .grid__container .ofertas__mes .ofertas__mes__container__texto .ofertas__mes__subtitulo {
         font-size: 2rem;
@@ -333,11 +385,11 @@ los input de cada seccion para buscar determinado servicio.*/
         text-align: center; }
       .grid__container .ofertas__mes .ofertas__mes__container__texto .ofertas__mes__descuento {
         font-size: 2rem;
-        color: white; }
+        color: #ffffff; }
         .grid__container .ofertas__mes .ofertas__mes__container__texto .ofertas__mes__descuento span {
           font-size: 4rem; }
       .grid__container .ofertas__mes .ofertas__mes__container__texto .ofertas__mes__hotel {
-        color: white;
+        color: #ffffff;
         font-size: 4rem; }
     .grid__container .ofertas__mes .ofertas__mes__imagen img {
       height: 35rem;
@@ -385,6 +437,104 @@ los input de cada seccion para buscar determinado servicio.*/
       height: 37rem;
       border-radius: 8px; }
 
+/* Sector main de autos*/
+.autos {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 140rem;
+  margin-top: 6rem; }
+  .autos__container__flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 125rem;
+    margin: auto; }
+  .autos__titulo {
+    font-size: 4rem;
+    text-align: center;
+    font-weight: 400; }
+  .autos__titulo--color {
+    color: #ff0000; }
+  .autos__alquiler__tamaño {
+    border-radius: 1.5rem;
+    width: 26.7rem;
+    height: 40rem;
+    box-shadow: 1px 3px 20px #b1a9a9;
+    transition: 0.2s;
+    margin-top: 1rem;
+    margin-bottom: 1rem; }
+    .autos__alquiler__tamaño:hover {
+      cursor: pointer;
+      transform: scale(1.02); }
+  .autos__alquiler__container--texto {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center; }
+  .autos__alquiler__container--coberturas {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    height: 15rem; }
+  .autos__alquiler__subcontainer--textos {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 10rem;
+    width: 10rem; }
+  .autos__container--logos {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center; }
+  .autos__alquiler1__descuento {
+    font-size: 4rem;
+    text-align: center; }
+  .autos__alquiler1__boton {
+    border-radius: 0.9rem;
+    width: 9rem;
+    height: 4rem;
+    color: #ffffff;
+    background-color: rgba(238, 34, 34, 0.918);
+    font-weight: 400;
+    font-family: "poppins", sans-serif;
+    font-size: 1.5rem;
+    border: 0;
+    transition: 0.3s; }
+    .autos__alquiler1__boton:hover {
+      cursor: pointer;
+      transform: scale(1.1); }
+  .autos__alquiler__lugar {
+    font-size: 2rem;
+    font-weight: 500; }
+  .autos__alquiler__cobertura {
+    font-size: 1rem;
+    font-weight: 500; }
+  .autos__alquiler__precio {
+    font-size: 1.5rem;
+    background-color: rgba(238, 34, 34, 0.767);
+    border-radius: 0.5rem;
+    color: #ffffff;
+    width: 6.5rem;
+    text-align: center; }
+  .autos__alquiler1__imagenhertz {
+    width: 13.5rem;
+    height: 8.5rem; }
+  .autos__alquiler__logo {
+    width: 8rem;
+    height: 6.2rem; }
+  .autos__alquiler__img {
+    width: 26.74rem;
+    height: 250px;
+    border-top-right-radius: 1.5rem;
+    border-top-left-radius: 1.5rem; }
+
+.autos__subtitulo {
+  font-size: 1.5rem; }
+
 /*Sector financiamiento,lo comparten todas las paginas excepto el index.*/
 .financiamiento {
   margin: auto;
@@ -425,7 +575,7 @@ los input de cada seccion para buscar determinado servicio.*/
     width: 300px;
     height: 40px;
     background-color: rgba(0, 0, 0, 0.836);
-    color: white;
+    color: #ffffff;
     font-size: 25px;
     font-weight: 300;
     font-family: "poppins", sans-serif;
@@ -441,16 +591,13 @@ los input de cada seccion para buscar determinado servicio.*/
 /* Sector previo al footer que comparten todas las paginas excepto el index.*/
 .prefooter {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: #bbb3b3;
-  background: radial-gradient(circle, #bbb3b3 0%, #575454 67%);
+  flex-wrap: wrap;
+  background: #D9D9D9;
   width: 100%;
-  height: 21rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center; }
+  height: 21rem; }
   .prefooter .prefooter__legales__textouno {
     font-size: 1.9rem;
     word-spacing: 5px;
@@ -463,24 +610,82 @@ los input de cada seccion para buscar determinado servicio.*/
     text-align: center;
     margin-left: 2rem;
     margin-right: 2rem; }
-  .prefooter .boton__arrepentimiento button {
-    background-color: rgba(238, 34, 34, 0.918);
-    border: none;
-    border-radius: 10px;
-    font-weight: 400;
-    color: white;
+  .prefooter__boton {
+    border-radius: 0.9rem;
     width: 25rem;
-    height: 35px;
+    height: 5rem;
+    color: #ffffff;
+    background-color: rgba(238, 34, 34, 0.918);
+    font-weight: 400;
     font-family: "poppins", sans-serif;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
+    font-size: 1.5rem;
+    border: 0;
     transition: 0.3s; }
+    .prefooter__boton:hover {
+      cursor: pointer;
+      background-color: #ff8800;
+      transform: scale(0.9);
+      box-shadow: 1px 3px 16px rgba(0, 0, 0, 0.37); }
 
-.boton__arrepentimiento button:hover {
-  cursor: pointer;
-  box-shadow: 0px 3px 2px rgba(0, 0, 0, 0.75);
-  background-color: #ff2600d3;
-  transform: scale(0.87); }
+.newsletter {
+  width: 100%;
+  background-color: rgba(238, 34, 34, 0.918);
+  height: 15rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center; }
+  .newsletter__container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 60%;
+    height: 5rem; }
+  .newsletter__boton-input {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center; }
+  .newsletter__input {
+    background-color: #e4e4e4;
+    outline: 0;
+    border: 0;
+    height: 3rem;
+    width: 40rem;
+    font-weight: 500;
+    font-family: monospace; }
+  .newsletter__texto {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    font-weight: 400; }
+  .newsletter__logos {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 8rem; }
+    .newsletter__logos:hover {
+      cursor: pointer; }
+  .newsletter__boton__enviar {
+    border-radius: 0.9rem;
+    width: 10rem;
+    height: 3rem;
+    color: #ffffff;
+    background-color: #232323;
+    font-weight: 400;
+    font-family: "poppins", sans-serif;
+    font-size: 1.5rem;
+    border: 0;
+    transition: 0.3s;
+    border-radius: 0;
+    border-top-right-radius: 0.3rem;
+    border-bottom-right-radius: 0.3rem; }
+    .newsletter__boton__enviar:hover {
+      cursor: pointer; }
 
 /* COMIENZO DEL FOOTER COMPARTIDO POR TODAS LAS PAGINAS*/
 .footer {
@@ -502,6 +707,10 @@ los input de cada seccion para buscar determinado servicio.*/
   body {
     overflow-x: hidden; } }
 
+@media (max-width: 1545px) {
+  .autos {
+    height: 160rem; } }
+
 @media (max-width: 1205px) {
   .grid__container .ofertas__lugares__container__grid {
     grid-column: 2/4; }
@@ -518,7 +727,9 @@ los input de cada seccion para buscar determinado servicio.*/
   .grid__container .cuotas__paisaje {
     grid-column: 3/4; }
   .financiamiento {
-    grid-column: 2/3; } }
+    grid-column: 2/3; }
+  .autos {
+    height: 180rem; } }
 
 @media (max-width: 1105px) {
   .grid__container .ofertas__mes {
@@ -527,16 +738,21 @@ los input de cada seccion para buscar determinado servicio.*/
   .grid__container .cuotas__interes, .grid__container .cuotas__paisaje {
     width: 30rem; }
   .grid__container .cuotas__interes .cuotas__interes__subfondo {
-    width: 28rem; }
+    width: 26rem; }
   .grid__container .cuotas__interes .cuotas__interes__subfondo .cuotas__interes__subfondo__texto {
     width: auto;
     font-size: 3.5rem; }
   .grid__container .cuotas__interes, .grid__container .cuotas__paisaje img {
-    width: 28rem; } }
+    width: 28rem; }
+  .autos {
+    height: 200rem; } }
 
-@media (max-width: 1026px) {
-  .prefooter {
-    height: auto; } }
+@media (max-width: 1125px) {
+  .autos {
+    margin-top: 14rem; }
+  .autos__container__flex {
+    margin-top: 5rem;
+    margin-bottom: 5rem; } }
 
 @media (max-width: 1160px) {
   .buscador {
@@ -544,7 +760,9 @@ los input de cada seccion para buscar determinado servicio.*/
     width: 95%;
     margin-bottom: 2rem; }
   .header {
-    height: auto; } }
+    height: auto; }
+  .autos__container__flex {
+    width: 95%; } }
 
 @media (max-width: 1060px) {
   .header .header__nav__contenedor {
@@ -552,9 +770,14 @@ los input de cada seccion para buscar determinado servicio.*/
     align-items: center; }
   .buscador .buscador__container {
     justify-content: center; }
+  .buscador__container__inputs {
+    justify-content: center; }
+  .buscador__container__titulo-boton {
+    width: 94%;
+    flex-wrap: wrap; }
   .buscador .buscador__container .buscador__de__vuelos__imagen {
     display: none; }
-  .buscador .buscador__container .buscador__de__vuelos__eleccion {
+  .buscador .buscador__container .buscador__de__vuelos__eleccion, .buscador__autos__eleccion, .buscador__hotel__eleccion {
     margin: 0.2rem;
     width: 25rem; }
   .financiamiento {
@@ -573,7 +796,19 @@ los input de cada seccion para buscar determinado servicio.*/
   .grid__container .ofertas__mes img {
     width: 45rem;
     height: 36rem;
-    margin-bottom: 2rem; } }
+    margin-bottom: 2rem; }
+  .buscador__container__checkboxboton--width {
+    width: 90%; } }
+
+@media (max-width: 1026px) {
+  .newsletter__logos {
+    margin: 2rem 0; }
+  .prefooter {
+    height: auto; }
+  .prefooter__boton {
+    margin: 1rem 0; }
+  .ofertas__lugares__promo1, .ofertas__lugares__promo2, .ofertas__lugares__promo3, .ofertas__lugares__promo4 {
+    margin-bottom: 5rem; } }
 
 /*TABLET */
 @media (max-width: 768px) {
@@ -582,18 +817,28 @@ los input de cada seccion para buscar determinado servicio.*/
   .header .header__nav__contenedor .header__nav .header__nav__lista {
     flex-wrap: wrap;
     justify-content: space-evenly; }
+  .buscador .buscador__container .buscador__de__vuelos__eleccion, .buscador__autos__eleccion {
+    margin-bottom: 1rem; }
   .grid__container .ofertas__mes {
     width: 66rem;
-    height: 91rem; } }
+    height: 91rem; }
+  .ofertas__lugares__promo1, .ofertas__lugares__promo2, .ofertas__lugares__promo3, .ofertas__lugares__promo4 {
+    margin-bottom: 5rem; } }
 
 @media (max-width: 700px) {
-  .buscador .buscador__vuelos__container__checkboxboton {
-    flex-wrap: nowrap;
+  .buscador .buscador__container__checkboxboton {
     width: 100%;
     justify-content: space-around; }
   .buscador {
     height: 50rem;
     width: 95%; }
+  .buscador__container__titulo-boton {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 17rem;
+    text-align: center; }
   .prefooter {
     height: auto; }
   .grid__container .ofertas__mes {
@@ -618,7 +863,11 @@ los input de cada seccion para buscar determinado servicio.*/
     width: 70rem; }
   .contenido__principal img {
     width: 20rem;
-    height: 15rem; } }
+    height: 15rem; }
+  .autos {
+    height: 240rem; }
+  .autos__container__flex {
+    width: 95%; } }
 
 @media (max-width: 630px) {
   .contenido__principal {
@@ -636,14 +885,18 @@ los input de cada seccion para buscar determinado servicio.*/
     height: 70rem; }
   .buscador .buscador__container {
     flex-direction: row; }
-  .buscador .buscador__container .buscador__de__vuelos__eleccion {
-    width: 100%;
+  .buscador .buscador__container .buscador__de__vuelos__eleccion, .buscador__autos__eleccion, .buscador__hotel__eleccion {
+    width: 75%;
     margin: 1rem; }
   .buscador__de__vuelos__eleccion--width {
     border: solid black;
     width: 40%; }
   .buscador .buscador__container .buscador__de__vuelos__eleccion input {
     width: 70%; }
+  .buscador__autos__eleccion input {
+    width: 70%; }
+  .newsletter__input {
+    width: 20rem; }
   .prefooter {
     flex-wrap: wrap;
     height: auto; }
@@ -688,16 +941,40 @@ los input de cada seccion para buscar determinado servicio.*/
   .grid__container .cuotas__paisaje {
     width: 40rem; }
   .grid__container .cuotas__paisaje img {
-    width: 37rem; } }
+    width: 37rem; }
+  .autos {
+    height: 250rem; } }
+
+@media (max-width: 590px) {
+  .buscador__container__titulo-boton {
+    margin: auto;
+    height: 14rem; }
+  .buscador__container__checkboxboton {
+    margin: 2rem 0; }
+  .buscador__flex--position {
+    display: flex;
+    justify-content: center;
+    height: 60rem; } }
+
+@media (max-width: 570px) {
+  .autos {
+    height: auto; }
+  .autos__container__flex {
+    justify-content: center; }
+  .autos__alquiler__tamaño:active {
+    cursor: pointer;
+    transform: scale(1.02); } }
 
 /* MOBILE LARGE*/
 @media (max-width: 475px) {
-  .buscador .buscador__vuelos__container__checkboxboton {
+  .buscador .buscador__container__checkboxboton {
     flex-direction: column;
     align-items: center;
     justify-content: space-between; }
-  .buscador .buscador__vuelos__container__checkboxboton .buscador__de__vuelos__checkbox {
+  .buscador .buscador__container__checkboxboton .buscador__checkbox {
     margin-bottom: 2rem; }
+  .buscador__container__titulo-boton {
+    flex-wrap: inherit; }
   .grid__container .ofertas__mes {
     width: 28rem; }
   .grid__container .ofertas__mes .ofertas__mes__imagen img {
@@ -739,10 +1016,37 @@ los input de cada seccion para buscar determinado servicio.*/
     width: 25rem; }
   .ofertas__lugares__promo1, .ofertas__lugares__promo2, .ofertas__lugares__promo3, .ofertas__lugares__promo4 {
     margin-bottom: 5rem; }
+  .autos {
+    height: 400rem; }
+  .autos__titulo {
+    font-size: 3rem; }
+  .newsletter {
+    height: 15rem;
+    align-items: flex-start; }
+  .newsletter__texto {
+    margin: 1rem 0;
+    text-align: center; }
+  .prefooter__boton {
+    border-radius: 0.9rem;
+    width: 10rem;
+    height: 5rem;
+    color: #ffffff;
+    background-color: rgba(238, 34, 34, 0.918);
+    font-weight: 400;
+    font-family: "poppins", sans-serif;
+    font-size: 1.5rem;
+    border: 0;
+    transition: 0.3s;
+    font-size: 1rem; }
+    .prefooter__boton:hover {
+      cursor: pointer;
+      background-color: #ff8800;
+      transform: scale(0.9);
+      box-shadow: 1px 3px 16px rgba(0, 0, 0, 0.37); }
   .footer {
     width: 100%;
     height: auto;
-    font-size: 2rem; }
+    font-size: 1.4rem; }
   .footer p {
     margin-top: 2rem;
     margin-bottom: 2rem; }
@@ -750,9 +1054,11 @@ los input de cada seccion para buscar determinado servicio.*/
     height: auto;
     justify-content: space-evenly; }
   .prefooter .prefooter__legales__textouno {
-    margin-top: 2rem; }
+    margin-top: 2rem;
+    font-size: 1.5rem; }
   .prefooter .prefooter__legales__textodos {
-    margin-bottom: 2rem; }
+    margin-bottom: 2rem;
+    font-size: 1.5rem; }
   .financiamiento {
     height: 65rem; }
   .financiamiento .financiamiento__titulo {
@@ -779,6 +1085,13 @@ los input de cada seccion para buscar determinado servicio.*/
     height: 10rem;
     margin-left: auto; } }
 
+@media (max-width: 400px) {
+  .buscador__titulo--margin {
+    text-align: center;
+    margin-top: 2rem; }
+  .newsletter__input {
+    width: 15rem; } }
+
 @media (max-width: 370px) {
   .grid__container .container__titulo .ofertas__titulo {
     font-size: 3rem; }
@@ -792,13 +1105,18 @@ los input de cada seccion para buscar determinado servicio.*/
   .contenido__principal img {
     width: 14rem;
     height: 10rem;
-    margin: auto; } }
+    margin: auto; }
+  .buscador .buscador__titulo {
+    font-size: 2rem; } }
 
 @media (max-width: 330px) {
   .financiamiento {
     height: 60rem; }
-  .prefooter .boton__arrepentimiento button {
-    width: 20rem; }
+  /*
+    .prefooter .boton__arrepentimiento button{
+        width: 20rem;
+    }
+    */
   .prefooter .prefooter__legales__textouno {
     font-size: 1.5rem; }
   .prefooter .prefooter__legales__textodos {

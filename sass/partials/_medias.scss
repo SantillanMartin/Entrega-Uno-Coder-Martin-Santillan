@@ -1,5 +1,6 @@
 /* MEDIAS QUERIES*/
 
+
 @media(max-width:1630px){
     .financiamiento__titulo{
         text-align: center;
@@ -7,6 +8,11 @@
     }
     body{
         overflow-x: hidden;
+    }
+}
+@media(max-width:1545px){
+    .autos{
+        height:160rem;
     }
 }
 
@@ -34,6 +40,10 @@
     .financiamiento{
         grid-column: 2/3;
     }
+    .autos{
+        height:180rem;
+    }
+    
    
 }
 @media(max-width:1105px){
@@ -45,7 +55,7 @@
         width: 30rem;
     }
     .grid__container .cuotas__interes .cuotas__interes__subfondo{
-        width: 28rem;
+        width: 26rem;
     }
     .grid__container .cuotas__interes .cuotas__interes__subfondo .cuotas__interes__subfondo__texto{
         width: auto;
@@ -55,14 +65,21 @@
         width: 28rem;
         
     }
-    
+    .autos{
+        height:200rem;
+    }
+     
 }
-@media (max-width:1026px){
-    
-    .prefooter{
-        height: auto;
+@media (max-width:1125px){
+    .autos{
+        margin-top: 14rem;
+    }
+    .autos__container__flex{
+        margin-top: 5rem;
+        margin-bottom: 5rem;
     }
 }
+
 
 
 
@@ -76,6 +93,9 @@
     .header{
         height: auto;
     }
+    .autos__container__flex{
+        width: 95%;
+    }
 }
 
 @media(max-width:1060px){
@@ -87,13 +107,24 @@
         justify-content: center;
         
     }
+    .buscador__container__inputs{
+        justify-content: center;
+        
+    }
+    .buscador__container__titulo-boton{
+        width: 94%;
+        flex-wrap: wrap;
+        
+    }
+    
     .buscador .buscador__container .buscador__de__vuelos__imagen{
         display: none;
     }
-    .buscador .buscador__container .buscador__de__vuelos__eleccion{
+    .buscador .buscador__container .buscador__de__vuelos__eleccion,.buscador__autos__eleccion,.buscador__hotel__eleccion{
         margin: 0.2rem;
         width: 25rem;
     }
+
     .financiamiento{
         height: auto;
     }
@@ -117,6 +148,24 @@
         margin-bottom: 2rem;
 
     }
+    .buscador__container__checkboxboton--width{
+        width: 90%;
+    }
+}
+@media (max-width:1026px){
+    
+    .newsletter__logos{
+        margin: 2rem 0;
+    }
+    .prefooter{
+        height: auto;
+    }
+    .prefooter__boton{
+        margin: 1rem 0;
+    }
+    .ofertas__lugares__promo1,.ofertas__lugares__promo2,.ofertas__lugares__promo3,.ofertas__lugares__promo4{
+        margin-bottom: 5rem;
+     }
 }
 
 /*TABLET */
@@ -129,15 +178,22 @@
         justify-content: space-evenly;
         
     }
+    .buscador .buscador__container .buscador__de__vuelos__eleccion,.buscador__autos__eleccion{
+        margin-bottom: 1rem;
+    }
    
     .grid__container .ofertas__mes{
         width: 66rem;
         height: 91rem;
     }
+    .ofertas__lugares__promo1,.ofertas__lugares__promo2,.ofertas__lugares__promo3,.ofertas__lugares__promo4{
+        margin-bottom: 5rem;
+     }
+    
 }
 @media(max-width:700px){
-    .buscador .buscador__vuelos__container__checkboxboton{
-        flex-wrap: nowrap;
+    .buscador .buscador__container__checkboxboton{
+        
         width: 100%;
         justify-content: space-around;
     }
@@ -145,6 +201,12 @@
         height: 50rem;
         width: 95%;
     }
+    .buscador__container__titulo-boton{
+        @include D-Flex(column,space-evenly,center);
+        height: 17rem;
+        text-align: center;
+    }
+    
     .prefooter{
         height: auto;
     }
@@ -184,6 +246,13 @@
         width: 20rem;
         height: 15rem;
     }
+    .autos{
+        height:240rem;
+    }
+    .autos__container__flex{
+        width: 95%;
+    }
+   
     
     
     
@@ -213,9 +282,9 @@
     .buscador .buscador__container {
         flex-direction: row;
     }
-    
-    .buscador .buscador__container .buscador__de__vuelos__eleccion{
-        width: 100%;
+
+    .buscador .buscador__container .buscador__de__vuelos__eleccion,.buscador__autos__eleccion,.buscador__hotel__eleccion{
+        width: 75%;
         margin: 1rem;
     }
     .buscador__de__vuelos__eleccion--width{
@@ -225,6 +294,14 @@
     }
     .buscador .buscador__container .buscador__de__vuelos__eleccion input{
         width: 70%;
+    }
+    .buscador__autos__eleccion{
+        input{
+            width:70%;
+        }
+    }
+    .newsletter__input{
+        width: 20rem;
     }
     .prefooter{
         flex-wrap: wrap;
@@ -289,19 +366,59 @@
      .grid__container .cuotas__paisaje img{
         width: 37rem;
      }
+     .autos{
+        height:250rem;
+    }
+}
+
+@media (max-width:590px){
+    .buscador__container__titulo-boton{
+        
+        margin: auto;
+        height: 14rem;
+    }
+    .buscador__container__checkboxboton{
+        margin: 2rem 0;
+    }
+    .buscador__flex--position{
+        display:flex;
+        justify-content: center;
+        height: 60rem;
+        
+    }
+}
+
+@media (max-width:570px){
+    .autos{
+        height: auto;
+    }
+    .autos__container__flex{
+        justify-content: center;    
+    }
+    .autos__alquiler__tamaño:active{
+            
+        cursor: pointer;
+        transform: scale(1.02);
+        
+     }
 }
  
 /* MOBILE LARGE*/
 
 @media(max-width:475px){
-    .buscador .buscador__vuelos__container__checkboxboton{
+    .buscador .buscador__container__checkboxboton{
         flex-direction: column;
         align-items: center;
         justify-content: space-between;
     }
-    .buscador .buscador__vuelos__container__checkboxboton .buscador__de__vuelos__checkbox{
+    .buscador .buscador__container__checkboxboton .buscador__checkbox{
         margin-bottom: 2rem;
     }
+    .buscador__container__titulo-boton{
+        flex-wrap: inherit;
+        
+    }
+   
     .grid__container .ofertas__mes{
         width: 28rem;
      }
@@ -357,10 +474,35 @@
      .ofertas__lugares__promo1,.ofertas__lugares__promo2,.ofertas__lugares__promo3,.ofertas__lugares__promo4{
         margin-bottom: 5rem;
      }
+     .autos{
+        height:400rem;
+    }
+    .autos__titulo{
+        font-size: map-get($font-size,'x-large');
+    }
+    .newsletter{
+        height: 15rem;
+        align-items: flex-start;
+    }
+    
+    .newsletter__texto{
+        margin: 1rem 0;
+        text-align: center;
+    }
+   
+    .prefooter__boton{
+    
+        @include Boton-Flexible(10rem,5rem,$opacity-red-buttons);
+        font-size: $small;
+        &:hover{
+            @include HoverBotonRojo();
+        }
+    }
+
     .footer{
         width: 100%;
         height: auto;
-        font-size: 2rem;
+        font-size: 1.4rem;
          
     }
     .footer p{
@@ -375,9 +517,11 @@
     }
     .prefooter .prefooter__legales__textouno{
         margin-top: 2rem;
+        font-size: $medium;
     }
     .prefooter .prefooter__legales__textodos{
         margin-bottom: 2rem;
+        font-size: $medium;
     }
     .financiamiento{
         height: 65rem;
@@ -415,6 +559,15 @@
         
     }
 }
+@media (max-width:400px){
+    .buscador__titulo--margin{
+        text-align: center;
+        margin-top: 2rem;
+    }
+    .newsletter__input{
+        width: 15rem;
+    }
+}
 
 
 
@@ -440,15 +593,21 @@
         height: 10rem;
         margin:auto;
     }
+    .buscador .buscador__titulo{
+        font-size:$large;
+    }
 }
 @media(max-width:330px){
     
     .financiamiento{
         height: 60rem;
     }
+    /*
     .prefooter .boton__arrepentimiento button{
         width: 20rem;
     }
+    */
+    
     .prefooter .prefooter__legales__textouno{
         font-size: 1.5rem;
     }

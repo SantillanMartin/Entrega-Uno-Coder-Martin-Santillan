@@ -1,17 +1,11 @@
 /* Sector previo al footer que comparten todas las paginas excepto el index.*/
 
 .prefooter{
-    display: flex;
+    @include D-Flex(column,center,center);
     flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    background: rgb(187,179,179);
-    background: radial-gradient(circle, rgb(187, 179, 179) 0%, rgba(87,84,84,1) 67%);
+    background: $prefooter;
     width: 100%;
     height: 21rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     .prefooter__legales__textouno{
         font-size: 1.9rem;
         word-spacing: 5px;
@@ -26,31 +20,13 @@
         margin-left: 2rem;
         margin-right: 2rem;    
     }
-    .boton__arrepentimiento{
+    &__boton{
         
-        button{
-            background-color:$opacity-red-buttons;
-            border: none;
-            border-radius: 10px;
-            font-weight: 400;
-            color:$text-color;
-            width: 25rem;
-            height: 35px;
-            font-family:$font-principal;
-            margin-top: 1rem;
-            margin-bottom: 1rem;
-            transition: 0.3s;
+        @include Boton-Flexible(25rem,5rem,$opacity-red-buttons);
+        &:hover{
+            @include HoverBotonRojo();
         }
     }
     
 }
 
-.boton__arrepentimiento{
-    button:hover{
-        cursor: pointer;
-        box-shadow: 0px 3px 2px rgba(0, 0, 0, 0.75);
-        background-color: #ff2600d3;
-        transform: scale(0.87);
-       
-    }
-} 

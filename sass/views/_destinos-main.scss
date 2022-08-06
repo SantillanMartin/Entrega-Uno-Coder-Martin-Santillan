@@ -3,7 +3,6 @@
 .grid__container{
     margin-top: 2rem;
     display: grid;
-    
     grid-template-columns: repeat(4,auto);
     grid-template-rows: repeat(4,auto);
     row-gap: 6rem;
@@ -42,15 +41,20 @@
         justify-content: space-evenly;
         flex-wrap: wrap;
         .ofertas__lugares--promo--tamaño{
-            border-radius: 1.25rem;
-            width: 276px;
-            height: 400px;
-            border: solid rgba(0, 0, 0,0.3);
+            @include CardAlquiler();
+            transition: 0.3s;
+            &:hover{
+            
+                cursor: pointer;
+                transform: scale(1.02);
+                
+             }
         }
         .ofertas__lugares__imagen{
-            width: 270px;
+            width: 26.74rem;
             height: 250px;
-            border-radius: 1rem;
+            border-top-right-radius: 2rem;
+            border-top-left-radius: 2rem;
             
         }
         .ofertas__lugares__container{

@@ -10,7 +10,7 @@
     &__container__flex{
         @include D-Flex(row,space-between,null);
         flex-wrap:wrap;
-        width:112rem;
+        width:125rem;
         margin: auto;
         
         
@@ -59,7 +59,7 @@
         text-align: center;
     }
     &__alquiler1__boton{
-        @include BotonRojo(9rem,4rem);
+        @include Boton-Flexible(9rem,4rem,$opacity-red-buttons);
         &:hover{
             cursor: pointer;
             transform: scale(1.1);
@@ -93,6 +93,7 @@
     &__alquiler__img{
         width: 26.74rem;
         height: 250px;
-        border-radius: 0.4rem;
+        border-top-right-radius: 1.5rem;
+        border-top-left-radius: 1.5rem;
      }
 }

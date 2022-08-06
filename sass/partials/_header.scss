@@ -1,17 +1,26 @@
-.header__imagen--destinos{
-    background-image: url(../imagenes/playa.jpg);
-    @include HeaderFondo();
-}
-.header__imagen--autos{
-    background-image: url(../../imagenes/route_66.avif);
-    @include HeaderFondo();
-}
+
+
 
 .header{
     
     display: flex;
     flex-direction: column;
     align-items: center;
+
+    &__imagen--destinos{
+        background-image: url(../imagenes/playa.jpg);
+        @include HeaderFondo();
+    }
+
+    &__imagen--autos{
+        background-image: url(../../imagenes/route_66.avif);
+        @include HeaderFondo();
+    }
+    
+    &__imagen--hoteles{
+        background-image: url(../../imagenes/las__vegas.avif);
+        @include HeaderFondo();
+    }
     .header__nav__contenedor{
         background-color: $opacity-black-header;
         width: 100%;
@@ -70,19 +79,19 @@ los input de cada seccion para buscar determinado servicio.*/
     margin-top: 8.5rem;
     max-width: 1600px;
     
-
-  
-    
     .buscador__titulo{
         margin-left: 1rem;
         font-size: 2.3rem;
         font-weight: 300;
+        
     }
     .buscador__selector{
         font-size: 1.7rem;  
+        font-weight:400;
+        color: #3a3a3a;
         input[type="radio"]{
             margin:1rem;
-            
+            accent-color: #808080;
         }
     }
     .buscador__container{
@@ -103,13 +112,15 @@ los input de cada seccion para buscar determinado servicio.*/
                 width: 14rem;
                 height: 25px;
                 background-color: #AFACAC;
-                border: none;
+                border: 0;
                 border-radius: 0.7rem;
+                outline: 0;
+                
             }
             h4{
-                font-weight: lighter;
-                font-size: 1.4rem;
-     
+                font-weight: 400;
+                
+                
             }
             
         }
@@ -120,48 +131,37 @@ los input de cada seccion para buscar determinado servicio.*/
         }
         
     }
-    .buscador__vuelos__container__checkboxboton{
+    &__container__checkboxboton{
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
         width: 55%;
-        .buscador__de__vuelos__checkbox{
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            font-size: 1.6rem;
-            margin-left: 1rem;
-            input[type="checkbox"]{
-                margin-left: 5px;
-                margin-right: 10px;
-            }
-
+    }
+    &__checkbox{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 1rem;
+        font-weight: 200;
+        font-size: 1.6rem;
+        color: #3a3a3a;
+        
+        input[type="checkbox"]{
+            margin-left: 5px;
+            margin-right: 10px;
+            accent-color:#8d8585;
         }
-        .buscador__boton__destinos{
-            @include BotonRojo(130px,50px);
-            &:hover{
-                @include HoverBotonRojo();
-            }
-            
-        }
-
 
     }
       /* Esta parte pertenece a la seccion autos, son inputs dentro de buscador*/
-      .buscador__container__inputs{
+      &__container__inputs{
         display: flex;
         justify-content: space-around;
-        .buscador__boton__autos{
-            @include BotonRojo(120px,50px);
-            &:hover{
-                @include HoverBotonRojo();
-            }
-        }
+        flex-wrap: wrap;
+        
     }
-    .buscador__autos__eleccion{
-        display: flex;
-        flex-direction: column;
-        align-items:center;
+    &__autos__eleccion{
+        @include D-Flex(column,null,center);
         width: 13.8rem;
         height: 5rem;
         border-radius: 15px;
@@ -172,49 +172,93 @@ los input de cada seccion para buscar determinado servicio.*/
         input{
             
             font-family:$font-principal;
-            font-size:15px;
+            font-size:1.4rem;
             width: 13.4rem;
             height: 2.5rem;
             background-color: #AFACAC;
-            border:none; 
-            color: $opacity-black;
+            border:none;
+            outline: 0;
+            color: $primary;
         }   
     }
 
-    .buscador__container__titulo-boton{
+    &__container__inputs__hotel{
+        @include D-Flex(row,space-evenly,null);
+        flex-wrap: wrap;
+    }
+
+    &__hotel__eleccion{
+        @include D-Flex(column,null,center);
+        @include Selectores-de-buscador(18rem,5rem);
+        h4{
+            font-weight: 400;
+        }
+        input{
+            
+            font-family:$font-principal;
+            font-size:1.4rem;
+            width: 12.5rem;
+            height: 2.5rem;
+            background-color: #AFACAC;
+            border:none;
+            outline: 0;
+            color: $primary;
+        }   
+    }
+    &__hotel__eleccion--width{
+        width: 25rem;
+        input{
+            width: 18rem;
+        }
+    }
+
+    &__container__titulo-boton{
         @include FlexJustiBetween();
         
         margin-top: 1rem;
-        width: 65%;
+        width: 58.9%;
         
         
     }
-    .boton__agregar__alojamiento{
-        
-       
-       
-        background-color:$opacity-black;
-        font-size: 20px;
-        font-weight:700;
-        font-family: $font-principal;
-        color:$text-color;
-        border-radius: 2rem;
-        width: 25rem;
-        border: none;
-        transition: 0.4s;
-        &:hover{
-            @include HoverBotonGris();
-        }
-        
-    }
-    .buscador__de__autos__checkbox{
+    
+    
+    &__container__checkbox{
         font-size: 1.6rem;
         display: flex;
         justify-content: flex-start;
         margin-left: 1rem;
         font-weight:200;
         gap: 0.5rem;
+        accent-color: grey;
+    }
+    
+    
+    /*Botones dentro de los buscadores Destinos,Hoteles,Autos,*/
+
+    &__boton__alojamiento{
+        @include Boton-Flexible(20rem,3.6rem,$grey-buttons);
         
+        &:hover{
+        @include HoverBotonGris();
+        }
+    }
+
+    &__boton__vuelo{
+        
+        @include Boton-Flexible(20rem,3.6rem,$grey-buttons);
+        
+        &:hover{
+        @include HoverBotonGris();
+        }
+     }
+     &__boton__buscar{
+        @include Boton-Flexible(120px,50px,$opacity-red-buttons);
+        &:hover{
+            @include HoverBotonRojo();
+        }
+    }
+    &__boton__buscar--width{
+        width: 17rem;
     }
 
 }
@@ -222,6 +266,9 @@ los input de cada seccion para buscar determinado servicio.*/
 
 
 
+
+
+/*Keyframes dentro del header*/
 
 @keyframes movimiento{
     0%{

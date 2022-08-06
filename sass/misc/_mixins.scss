@@ -11,27 +11,49 @@
     justify-content: space-between;
     
 }
+@mixin D-Flex($direction,$justify-content,$align-items) {
+    display: flex;
+    flex-direction:$direction;
+    justify-content:$justify-content;
+    align-items:$align-items;
+}
 
-@mixin BotonRojo($ancho,$altura) {
-            border-radius: 12px;
+@mixin Boton-Flexible($ancho,$altura,$background) {
+            border-radius: 0.9rem;
             width:$ancho;
             height:$altura;
+            color:$buttons-color;
+            background-color: $background;
+            font-weight:400;
             font-family:$font-principal;
-            color: white;
-            background-color:$opacity-red-buttons;
-            font-weight:bold;
-            border: none;
-            transition: 0.3s;
+            font-size: map-get($font-size,'medium');
+            border: 0;
+            transition: 0.3s;         
 }
+
+@mixin Selectores-de-buscador($ancho,$altura) {
+        width:$ancho;
+        height:$altura;
+        border-radius: 0.9rem;
+        background-color: #AFACAC;
+}
+
 
 @mixin HoverBotonRojo() {
     cursor: pointer;
     background-color:$opacity-orange-buttons;
-    transform: scale(0.90);
-    box-shadow: 1px 3px 2px $opacity-black;
+    transform: scale(0.9);
+    box-shadow: 1px 3px 16px $opacity-black;
 }
 
 @mixin HoverBotonGris {
     cursor: pointer;
-    transform: scale(0.97);
+    transform: scale(0.94);
+}
+
+@mixin CardAlquiler(){
+    border-radius: 1.5rem;
+    width: 26.7rem;
+    height: 40rem;
+    box-shadow: 1px 3px 20px rgb(177, 169, 169);
 }

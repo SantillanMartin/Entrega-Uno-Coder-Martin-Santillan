@@ -1,0 +1,47 @@
+.newsletter{
+    width: 100%;
+    background-color: $opacity-red-buttons;
+    height: 15rem;
+    @include D-Flex(row,center,center);
+    &__container{
+        @include D-Flex(row,space-around,center);
+        flex-wrap: wrap;
+        width: 60%;
+        height: 5rem;
+        
+    }
+    &__boton-input{
+        @include D-Flex(row,center,center);
+    }
+    &__input{
+        background-color: #e4e4e4;
+        outline: 0;
+        border: 0;
+        height: 3rem;
+        width: 40rem;
+        font-weight: 500;
+        font-family: monospace;
+        
+    }
+    &__texto{
+        @include D-Flex(null,center,center);
+        font-size: $medium;
+        font-weight: 400;
+    }
+    &__logos{
+        @include D-Flex(row,space-evenly,center);
+        width: 8rem;
+        &:hover{
+            cursor: pointer;
+        }
+    }
+    &__boton__enviar{
+        @include Boton-Flexible(10rem,3rem,#232323);
+        border-radius: 0;
+        border-top-right-radius: 0.3rem;
+        border-bottom-right-radius: 0.3rem;
+        &:hover{
+            cursor:pointer;
+        }
+    }
+}

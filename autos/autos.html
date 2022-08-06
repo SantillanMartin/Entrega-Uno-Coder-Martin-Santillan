@@ -42,7 +42,7 @@
                 <section class="buscador__container__titulo-boton">
                     <h2 class="buscador__titulo">Encontrá los mejores autos.</h2>
         
-                    <button class="boton__agregar__alojamiento">Agregar Alojamiento</button>
+                    <button class="buscador__boton__alojamiento">Agregar Alojamiento</button>
                 </section>
                 
                 <section class="buscador__container__inputs">
@@ -78,15 +78,18 @@
                     <input type="number" max="99" min="18">
                 </section>
                 
-                <section>
-                    <button class="buscador__boton__autos">BUSCAR</button>
-                </section>
+                
             
             </section>
-                <section class="buscador__de__autos__checkbox">
-                    <input type="checkbox" name="selector">¿Querés devolverlo en otro destino?
-                </section>
                 
+            <section class="buscador__container__checkboxboton buscador__container__checkboxboton--width">
+                    <section class="buscador__checkbox">
+                    <input type="checkbox" name="selector">¿Querés devolverlo en otro destino?
+                    </section>
+                    <section>
+                    <button class="buscador__boton__buscar">BUSCAR</button>
+                    </section>
+            </section>
                
     
             
@@ -174,12 +177,14 @@
                             <h5 class="autos__alquiler__precio">
                             $20.000
                             </h5>
-                    </section>
-                    
+                    </section>    
                 </section>
+
             </section>
-           <!--Titulos-->  
-        <h2 class="autos__titulo">
+
+            <!--Titulos-->  
+
+            <h2 class="autos__titulo">
             ¡ARGENTINA EN AUTO<span class="autos__titulo--color"> 12 CUOTAS SIN INTERES!</span>
         </h2>
         
@@ -297,7 +302,7 @@
 
     </section>    
     
-       
+       <!--Prefooter-->
     <section class="prefooter">
 
         <section class="prefooter__legales__textouno">
@@ -310,9 +315,29 @@
             * Según Resolución 329/2020 ANAC el derecho de arrepentimiento no aplica para vuelos y estos se rigen por la política de devolución informada en tu voucher.
         </section>    
         
-        <button class="boton__arrepentimiento">BOTON DE ARREPENTIMIENTO</button>
+        <button class="prefooter__boton">BOTON DE ARREPENTIMIENTO</button>
     
-    </section>    
+    </section> 
+    <!--Newsletter-->
+<form action="post">
+    <section class="newsletter">
+        <section class="newsletter__container">
+            <h4 class="newsletter__texto">
+                SUSCRIBITE A NUESTRO NEWSLETTER
+            </h4>
+            <section class="newsletter__boton-input">
+                <input class="newsletter__input" type="mail" placeholder="Ingresa tu Mail...">
+                <button type="submit" class="newsletter__boton__enviar">ENVIAR</button>
+            </section>
+            
+            <section class="newsletter__logos">
+                <a href="#"><img src="../imagenes/facebook_logo.svg" alt="facebook volando viajes"></a>
+                <a href="#"><img src="../imagenes/intagram_logo.svg" alt="instagram volando viajes"></a>
+                
+            </section>
+        </section>
+    </section>
+</form>   
 
 <footer class="footer">
 <p>
