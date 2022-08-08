@@ -6,7 +6,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="keywords" content="viajes,ofertas vuelos,12 cuotas, contacto vuelos, buscar vuelos baratos, formulario">
         <meta name="description" content="Viaja por el mundo y paga en cuotas. Las mejores ofertas en alojamiento,autos,destinos. Volando Viajes">
-        <link rel="stylesheet" href="../css/estilos.css">
+        <link rel="icon" href="../imagenes/avion.ico">
+        <link rel="stylesheet" href="../css/style.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
@@ -15,175 +16,158 @@
         <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
         <title>Volando Viajes-Contacto</title>
     </head>
-<body class="fondo__header__contacto">
-    <section class="imagen__fondo__formulario">
-    <header class="header  header__fondo--opacidad">
-        <section class="header__logo">
-            <h1 class="header__logo__contacto--size">Volando</h1>
-            
+<body>
+    <section class="body--background--contacto">
+
         
+        <header class="header">
             
-        </section>
-        <nav class="header__nav">
-            
-            <ul class="header__nav__lista">
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="../destinos/destinos.html">Destinos</a></li>
-                <li><a href="../hoteles/hoteles.html">Hoteles</a></li>
-                <li><a href="../autos/autos.html">Autos</a></li>
-                <li><a href="./contacto.html">Contacto</a></li>
-            </ul>
+            <nav class="header__nav__contenedor">
+                 <section class="header__logo">
+                     <h1>Volando</h1>
+                 </section>
+             
+                 <section class="header__nav">
+                 
+                     <ul class="header__nav__lista ">
+                         <li><a href="../index.html">Inicio</a></li>
+                         <li><a href="../destinos/destinos.html">Destinos</a></li>
+                         <li><a href="../hoteles/hoteles.html">Hoteles</a></li>
+                         <li><a href="../autos/autos.html">Autos</a></li>
+                         <li><a href="../formularios/contacto.html">Contacto</a></li>
+                     </ul>
+             
+                 </section>
+            </nav>
+        </header> 
+        <main>
+            <form class="formulario" method="post">
         
-        </nav>
-    </header>
-    
-    <form  class="formulario" method="post">
-        
-                <h2 class="formulario__titulo">CONTACTATE CON NUESTROS REPRESENTANTES</h2>
-                
-                <section class="formulario__nombre">
-                    <label for="nombre_pila">Nombre :</label>
-                    <input type="text" maxlength="30" name="nombre_pila"/>
-                </section>
-                
-                <section class="formulario__apellido">
-                    <label for="appellido">Apellido:</label>
-                    <input type="text" maxlength="30" name="apellido"/>
-                </section>
-                
-                <section class="formulario__radio">
-                    <label for="sexo">Sexo :</label>
-                    <input type="radio" name="sexo">Masculino
-                    <input type="radio" name="sexo">Femenino
-                    <input type="radio" name="sexo">Otro
-                </section>
-                
-                <section class="formulario__checkbox">
-                    <section class="formulario__checkbox__actividad">
-                        <label for="">Indique que actividad quiere contratar: </label>
-                    </section>
-                    <section class="formulario__checkbox__eleccion">
-                        <input type="checkbox" name="vuelos" value="vuelos"/>Vuelos
-                        <input type="checkbox" name="autos" value="autos"/>Autos
-                        <input type="checkbox" name="hoteles" value="hoteles">Hoteles
-                        <input type="checkbox" name="paquetes" value="paquetes"/>Paquetes
-                        <input type="checkbox" name="otro" value="otro"/>Otro
-                    </section>
-                    
-                </section>
-                <section class="formulario__mail">
-                    <label for="mail">Indique su mail :</label>
-                    <input type="mail">
-                </section>
-                <section class="formulario__select">
-                    <label for="">¿Ya nos conocia? :</label>
-                        <select>
-                            <option disabled selected>Seleccione</option>
-                            <option>Si</option>
-                            <option>No</option>
-                        </select>
-                </section>
-                <section class="formulario__textarea">
-                    <label>Dejenos cualquier comentario:</label>
-                    <section class="formulario__textarea__text">
-                        <textarea cols="100" rows="4" placeholder="Escriba aqui"></textarea>
-                    </section>
-                    
-                </section>
-                <section class="formulario__botones">
-                        <section class="formulario__reset__submit">
-                        <input type="submit">
+                <section class="formulario__container">
+                    <h2 class="formulario__titulo">Ponete en contacto con nosotros</h2>
                         
+                    <section class="formulario__nombre-apellido">
+                        <section class="formulario__nombre">
+                            <label for="nombre_pila">Nombre :</label>
+                            <input type="text" maxlength="30" name="nombre_pila"/>
                         </section>
-                        <section class="formulario__reset__submit">
-                            <input type="reset" value="Reiniciar">
+                        <section class="formulario__apellido">
+                            <label for="appellido">Apellido:</label>
+                            <input type="text" maxlength="30" name="apellido"/>
                         </section>
+                    </section>
+            
                     
-                </section>
+                    <section class="formulario__mail">
+                    <section class="formulario__mail__container">
+                        <label for="mail">Indique su mail :</label>
+                        <input type="email">
+                    </section>
                    
+                    </section>
                     
+                        <textarea class="formulario__textarea"  cols="100" rows="4">Escriba aqui cualquier comentario...</textarea>
+                    
+                    
+                    
+                    <section class="formulario__botones">
+                        
+                        <input class="formulario__reset__submit" type="submit">
+                        <input class="formulario__reset__submit" type="reset" value="Reiniciar">
+                    </section>
+                        
+                            
+                </section>
                 
-    </form>
-        </section>
+                    
+               
+                
+                                  
+            </form>
+        </main>
+    
+        
+        
+
+    
+    </section>
+
+    <!--Financiamiento-->
+
     <section class="financiamiento">
         <section class="financiamiento__titulo">
             Tenemos la mejor financiacion para tu viaje
         </section>
         <section class="financiamiento__formasdepago">
-            <ul class=financiamiento__formasdepago__lista>
-                <li>
-                    <img src="../imagenes/ahora_12.svg" alt="ahora_12">
-                </li>
-                <li>
-                    <img src="../imagenes/Ahora18-fondo-blanco.webp" alt="ahora_18">
-                </li>
-                <li>
-                    <img src="../imagenes/visa_logodos.jpg" alt="visa_logo">
-                </li>
-                <li>
-                    <img src="../imagenes/apple_pay.png" alt="apple_pay">
-                </li>
-                <li><img src="../imagenes/bitcoin_logo.png" alt="bitcoin"></li>
-            </ul>
-            <ul class="financiamiento__formasdepago__listados">
-                <li>12 cuotas</li>
-                <li>18 cuotas</li>
-                <li>Visa</li>
-                <li>Apple Pay</li>
-                <li>Bitcoin</li>
-            </ul>
-        </section>
+            <section class="financiamiento__formasdepago__iconos">
+                <img src="../imagenes/ahora_12.svg" alt="ahora_12">
+                <h5>12 cuotas</h5>
+            </section>
+            <section class="financiamiento__formasdepago__iconos">
+                <img src="../imagenes/Ahora18-fondo-blanco.webp" alt="ahora_18">
+                <h5>18 cuotas</h5>
+            </section>
+            <section class="financiamiento__formasdepago__iconos">
+                <img src="../imagenes/visa_logodos.jpg" alt="visa_logo">
+                <h5>Visa</h5>
+            </section>
+            <section class="financiamiento__formasdepago__iconos">
+                <img src="../imagenes/apple_pay.png" alt="apple_pay">
+                <h5>Apple Pay</h5>
+            </section>
+            <section class="financiamiento__formasdepago__iconos">
+                <img src="../imagenes/bitcoin_logo.png" alt="bitcoin">
+                <h5>Bitcoin</h5>
+            </section>
+        </section> 
         <section class="financiamiento__boton">
             <button class="financiamiento__boton__bancos">VER MAS BANCOS</button>
+        </section> 
+    </section>    
+    
+       <!--Prefooter-->
+    <section class="prefooter">
 
-        </section>
-    </section>
-</main>
-<section class="prefooter">
-    <section class="prefooter__legales">
         <section class="prefooter__legales__textouno">
-        ¿Te arrepentiste de tu compra?
-         </section>
-         <section class="prefooter__legales__textodos">
+            ¿Te arrepentiste de tu compra?
+        </section>
+        
+        <section class="prefooter__legales__textodos">
             De acuerdo al derecho de arrepentimiento , podés cancelar tu compra dentro de los 10 días corridos de haberla realizado.
 
-        * Según Resolución 329/2020 ANAC el derecho de arrepentimiento no aplica para vuelos y estos se rigen por la política de devolución informada en tu voucher.
-         </section>
-         
-    </section>
-    <section class="boton__arrepentimiento">
-        <button>BOTON DE ARREPENTIMIENTO</button>
-     </section>
-</section>
-<!--Newsletter-->
-<form action="post">
-    <section class="newsletter">
-        <section class="newsletter__container">
-            <h4 class="newsletter__texto">
-                SUSCRIBITE A NUESTRO NEWSLETTER
-            </h4>
-            <section class="newsletter__boton-input">
-                <input class="newsletter__input" type="mail" placeholder="Ingresa tu Mail...">
-                <button type="submit" class="newsletter__boton__enviar">ENVIAR</button>
-            </section>
+            * Según Resolución 329/2020 ANAC el derecho de arrepentimiento no aplica para vuelos y estos se rigen por la política de devolución informada en tu voucher.
+        </section>    
+        
+        <button class="prefooter__boton">BOTON DE ARREPENTIMIENTO</button>
+    
+    </section> 
+    <!--Newsletter-->
+    <form action="post">
+        <section class="newsletter">
+            <section class="newsletter__container">
+                <h4 class="newsletter__texto">
+                    SUSCRIBITE A NUESTRO NEWSLETTER
+                </h4>
+                <section class="newsletter__boton-input">
+                    <input class="newsletter__input" type="email" placeholder="Ingresa tu Mail...">
+                    <button type="submit" class="newsletter__boton__enviar">ENVIAR</button>
+                </section>
             
-            <section class="newsletter__logos">
-                <a href="#"><img src="../imagenes/facebook_logo.svg" alt="facebook volando viajes"></a>
-                <a href="#"><img src="../imagenes/intagram_logo.svg" alt="instagram volando viajes"></a>
-                
+                <section class="newsletter__logos">
+                    <a href="#"><img src="../imagenes/facebook_logo.svg" alt="facebook volando viajes"></a>
+                    <a href="#"><img src="../imagenes/intagram_logo.svg" alt="instagram volando viajes"></a>
+                </section>
             </section>
         </section>
-    </section>
-</form>
-
-<footer class="footer">
-    <section class="footer__texto">
-        |Politica de Seguridad |Politica de Privacidad |Terminos y Condiciones
-        del Uso del Sitio |Todos los Derechos Reservados TM°
-    </section>
+    </form>   
+    <!--Footer-->
+    <footer class="footer">
+        <p>
+            |Politica de Seguridad |Politica de Privacidad |Terminos y Condiciones
+            del Uso del Sitio |Todos los Derechos Reservados TM°
+        </p>
+    </footer>
     
-</footer>
     
-   
 </body>
 </html>

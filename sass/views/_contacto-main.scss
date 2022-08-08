@@ -1,0 +1,86 @@
+.body--background--contacto{
+    background-image:url(../../imagenes/rocas__fondo__contacto.avif);
+    background-repeat: no-repeat;
+    background-size: 100vw 100vh;
+    height: 100vh;
+}
+
+.formulario{
+    @include D-Flex(null,center,center);
+    height: 70rem;
+    
+    &__container{
+        background-color: $opacity-white;
+        width: 60%;
+        height: 40rem;
+        border-radius: 0.8rem;
+        @include D-Flex(column,space-evenly,center);
+        flex-wrap: wrap;
+        box-shadow: 1px 3px 16px $opacity-black;
+        
+    }
+    &__titulo{
+        font-size: $large;
+        font-weight: 400;
+    }
+    &__nombre-apellido{
+        @include D-Flex(row,space-evenly,center);
+        
+        width: 50%;
+        
+        
+    }
+    &__nombre{
+        font-size: $medium;
+        font-weight: 500;
+        margin: 2rem 1rem;
+        input{
+            background-color:#808080;
+            border: none;
+            border-radius: 0.3rem;
+            color:$text-color;
+            font-family:$font-principal,sans-serif;
+            font-size: $medium;
+            outline: 0;
+            font-weight: 300;
+        }
+        
+    }
+    &__apellido{
+        @extend .formulario__nombre;
+    }
+    &__mail{
+        @include D-Flex(row,space-around,center);
+        flex-wrap: wrap;
+        @extend .formulario__nombre;
+        input{
+            width: 40rem;
+        }
+    }
+    &__textarea{
+        background-color: #808080;
+        color: $text-color;
+        font-family: $font-principal,sans-serif;
+    
+    }
+    
+    &__botones{
+        width: 50%;
+        @include D-Flex(row,space-around,center);
+        flex-wrap: wrap;
+        margin: 2rem 0;
+    }
+    &__reset__submit{
+        font-size:$large;
+        font-family: 'poppins',sans-serif;
+        font-weight: 300;
+        border: none;
+        background-color:$primary;
+        color: $opacity-white;
+        width: 10rem;
+        transition: 0.3s;
+        &:hover{
+            @include HoverBotonGris();
+        }
+    }
+}

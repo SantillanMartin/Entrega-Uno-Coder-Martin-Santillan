@@ -21,7 +21,7 @@ body {
   font-family: "poppins", sans-serif; }
 
 a {
-  text-decoration: none; }
+  text-decoration: none !important; }
 
 ul {
   list-style-type: none; }
@@ -43,7 +43,7 @@ ul {
     height: 50rem;
     background-repeat: no-repeat; }
   .header__imagen--hoteles {
-    background-image: url(../../imagenes/vegas.jpg);
+    background-image: url(../../imagenes/las__vegas.avif);
     background-size: cover;
     width: 100vw;
     height: 50rem;
@@ -58,11 +58,12 @@ ul {
     flex-wrap: wrap; }
     .header .header__nav__contenedor .header__logo {
       width: 25rem;
-      font-size: 3rem;
-      color: #ffffff;
-      font-family: 'Poppins', sans-serif;
       margin-left: 4rem;
       transition: 2s; }
+      .header .header__nav__contenedor .header__logo h1 {
+        font-size: 3rem;
+        font-family: 'Poppins', sans-serif;
+        color: #ffffff; }
     .header .header__nav__contenedor .header__nav {
       margin-right: 4rem; }
       .header .header__nav__contenedor .header__nav .header__nav__lista {
@@ -535,6 +536,83 @@ los input de cada seccion para buscar determinado servicio.*/
 .autos__subtitulo {
   font-size: 1.5rem; }
 
+.body--background--contacto {
+  background-image: url(../../imagenes/rocas__fondo__contacto.avif);
+  background-repeat: no-repeat;
+  background-size: 100vw 100vh;
+  height: 100vh; }
+
+.formulario {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70rem; }
+  .formulario__container {
+    background-color: rgba(255, 255, 255, 0.952);
+    width: 60%;
+    height: 40rem;
+    border-radius: 0.8rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    box-shadow: 1px 3px 16px rgba(0, 0, 0, 0.37); }
+  .formulario__titulo {
+    font-size: 2rem;
+    font-weight: 400; }
+  .formulario__nombre-apellido {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 50%; }
+  .formulario__nombre, .formulario__apellido, .formulario__mail {
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin: 2rem 1rem; }
+    .formulario__nombre input, .formulario__apellido input, .formulario__mail input {
+      background-color: #808080;
+      border: none;
+      border-radius: 0.3rem;
+      color: #ffffff;
+      font-family: "poppins", sans-serif, sans-serif;
+      font-size: 1.5rem;
+      outline: 0;
+      font-weight: 300; }
+  .formulario__mail {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap; }
+    .formulario__mail input {
+      width: 40rem; }
+  .formulario__textarea {
+    background-color: #808080;
+    color: #ffffff;
+    font-family: "poppins", sans-serif, sans-serif; }
+  .formulario__botones {
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 2rem 0; }
+  .formulario__reset__submit {
+    font-size: 2rem;
+    font-family: 'poppins',sans-serif;
+    font-weight: 300;
+    border: none;
+    background-color: black;
+    color: rgba(255, 255, 255, 0.952);
+    width: 10rem;
+    transition: 0.3s; }
+    .formulario__reset__submit:hover {
+      cursor: pointer;
+      transform: scale(0.94); }
+
 /*Sector financiamiento,lo comparten todas las paginas excepto el index.*/
 .financiamiento {
   margin: auto;
@@ -711,6 +789,12 @@ los input de cada seccion para buscar determinado servicio.*/
   .autos {
     height: 160rem; } }
 
+@media (max-width: 1230px) {
+  .formulario__mail input {
+    width: auto; }
+  .formulario__textarea {
+    width: 40rem; } }
+
 @media (max-width: 1205px) {
   .grid__container .ofertas__lugares__container__grid {
     grid-column: 2/4; }
@@ -867,7 +951,13 @@ los input de cada seccion para buscar determinado servicio.*/
   .autos {
     height: 240rem; }
   .autos__container__flex {
-    width: 95%; } }
+    width: 95%; }
+  .formulario__container {
+    height: 65rem;
+    width: 90%; }
+  .formulario__textarea {
+    width: 70%;
+    height: auto; } }
 
 @media (max-width: 630px) {
   .contenido__principal {
@@ -1023,6 +1113,16 @@ los input de cada seccion para buscar determinado servicio.*/
   .newsletter {
     height: 15rem;
     align-items: flex-start; }
+  .formulario__container {
+    height: 65rem; }
+  .formulario__titulo {
+    text-align: center; }
+  .formulario__nombre-apellido {
+    flex-wrap: wrap; }
+  .formulario__textarea {
+    height: 15rem; }
+  .formulario__botones {
+    width: 80%; }
   .newsletter__texto {
     margin: 1rem 0;
     text-align: center; }
@@ -1090,7 +1190,9 @@ los input de cada seccion para buscar determinado servicio.*/
     text-align: center;
     margin-top: 2rem; }
   .newsletter__input {
-    width: 15rem; } }
+    width: 15rem; }
+  .formulario__mail, .formulario__nombre, .formulario__apellido, .formulario__mail {
+    text-align: center; } }
 
 @media (max-width: 370px) {
   .grid__container .container__titulo .ofertas__titulo {

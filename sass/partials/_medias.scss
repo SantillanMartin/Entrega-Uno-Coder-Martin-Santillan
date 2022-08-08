@@ -15,6 +15,16 @@
         height:160rem;
     }
 }
+@media(max-width:1230px){
+    .formulario__mail{
+        input{
+            width: auto;
+        }
+    }
+    .formulario__textarea{
+        width: 40rem;
+    }
+}
 
 @media(max-width:1205px){
     .grid__container .ofertas__lugares__container__grid{
@@ -252,7 +262,15 @@
     .autos__container__flex{
         width: 95%;
     }
-   
+    .formulario__container{
+        height: 65rem;
+        width: 90%;
+    }
+    
+    .formulario__textarea{
+        width: 70%;
+        height: auto;
+    }
     
     
     
@@ -484,6 +502,22 @@
         height: 15rem;
         align-items: flex-start;
     }
+    .formulario__container{
+        height: 65rem;
+    }
+    .formulario__titulo{
+        text-align: center;
+    }
+    .formulario__nombre-apellido{
+        flex-wrap: wrap;
+    }
+    .formulario__textarea{
+        height: 15rem;
+    }
+
+    .formulario__botones{
+        width: 80%;
+    }
     
     .newsletter__texto{
         margin: 1rem 0;
@@ -566,6 +600,9 @@
     }
     .newsletter__input{
         width: 15rem;
+    }
+    .formulario__mail,.formulario__nombre{
+        text-align: center;
     }
 }
 
