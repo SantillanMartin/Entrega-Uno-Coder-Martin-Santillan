@@ -48,37 +48,38 @@ ul {
     width: 100vw;
     height: 50rem;
     background-repeat: no-repeat; }
-  .header .header__nav__contenedor {
+  .header__nav__contenedor {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
     background-color: rgba(0, 0, 0, 0.116);
     width: 100%;
-    height: 12rem;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-wrap: wrap; }
-    .header .header__nav__contenedor .header__logo {
+    height: 12rem; }
+    .header__nav__contenedor .header__logo {
       width: 25rem;
       margin-left: 4rem;
       transition: 2s; }
-      .header .header__nav__contenedor .header__logo h1 {
+      .header__nav__contenedor .header__logo h1 {
         font-size: 3rem;
         font-family: 'Poppins', sans-serif;
         color: #ffffff; }
-    .header .header__nav__contenedor .header__nav {
+    .header__nav__contenedor .header__nav {
       margin-right: 4rem; }
-      .header .header__nav__contenedor .header__nav .header__nav__lista {
-        display: flex;
-        flex-wrap: wrap;
-        font-family: 'poppins',sans-serif;
-        list-style: none; }
-        .header .header__nav__contenedor .header__nav .header__nav__lista a {
-          padding: 2.5rem;
-          font-size: 2rem;
-          color: #ffffff; }
-        .header .header__nav__contenedor .header__nav .header__nav__lista li {
-          transition: 0.4s; }
-        .header .header__nav__contenedor .header__nav .header__nav__lista li:hover {
-          transform: scale(1.2); }
+  .header__nav__lista {
+    display: flex;
+    flex-wrap: wrap;
+    font-family: 'poppins',sans-serif;
+    list-style: none; }
+    .header__nav__lista a {
+      padding: 2.5rem;
+      font-size: 2rem;
+      color: #ffffff; }
+    .header__nav__lista li {
+      transition: 0.4s; }
+    .header__nav__lista li:hover {
+      transform: scale(1.2); }
 
 /*Buscador dentro del header, es el container de todos 
 los input de cada seccion para buscar determinado servicio.*/
@@ -543,7 +544,7 @@ los input de cada seccion para buscar determinado servicio.*/
   height: 100vh; }
 
 .relleno__height {
-  height: 20rem;
+  height: 30rem;
   width: 100%;
   display: none; }
 
@@ -1094,6 +1095,10 @@ los input de cada seccion para buscar determinado servicio.*/
 
 /* MOBILE LARGE*/
 @media (max-width: 475px) {
+  .header .header__nav__lista {
+    flex-direction: column; }
+    .header .header__nav__lista li {
+      margin: 0.8rem; }
   .buscador .buscador__container__checkboxboton {
     flex-direction: column;
     align-items: center;

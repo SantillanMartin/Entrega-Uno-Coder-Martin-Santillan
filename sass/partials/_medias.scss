@@ -445,6 +445,14 @@
 /* MOBILE LARGE*/
 
 @media(max-width:475px){
+    
+    .header .header__nav__lista{
+        flex-direction: column;
+        li{
+            margin:0.8rem;
+        }
+    }
+    
     .buscador .buscador__container__checkboxboton{
         flex-direction: column;
         align-items: center;
