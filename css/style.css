@@ -1095,9 +1095,13 @@ los input de cada seccion para buscar determinado servicio.*/
 
 /* MOBILE LARGE*/
 @media (max-width: 475px) {
-  .header .header__nav__lista {
-    flex-direction: column; }
-    .header .header__nav__lista li {
+  .header__logo {
+    display: flex;
+    justify-content: flex-start; }
+  .header__nav__lista {
+    flex-direction: column;
+    align-items: center; }
+    .header__nav__lista li {
       margin: 0.8rem; }
   .buscador .buscador__container__checkboxboton {
     flex-direction: column;
