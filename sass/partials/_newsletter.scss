@@ -12,16 +12,23 @@
     }
     &__boton-input{
         @include D-Flex(row,center,center);
+        
+        
     }
     &__input{
         background-color: #e4e4e4;
         outline: 0;
         border: 0;
+        border-top-left-radius: 0.4rem;
+        border-bottom-left-radius: 0.4rem;
         height: 3rem;
         width: 40rem;
         font-weight: 500;
         font-family: monospace;
-        
+        transition: 0.2s;
+        &:hover{
+            outline: solid 4px $opacity-orange-buttons;
+        }
     }
     &__texto{
         @include D-Flex(null,center,center);
@@ -38,10 +45,12 @@
     &__boton__enviar{
         @include Boton-Flexible(10rem,3rem,#232323);
         border-radius: 0;
-        border-top-right-radius: 0.3rem;
-        border-bottom-right-radius: 0.3rem;
+        border-top-right-radius: 0.4rem;
+        border-bottom-right-radius: 0.4rem;
+        transition: 0.6s;
         &:hover{
             cursor:pointer;
+            background-color:#808080;
         }
     }
 }

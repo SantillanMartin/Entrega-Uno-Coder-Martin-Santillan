@@ -1,5 +1,13 @@
 /* MEDIAS QUERIES*/
 
+/* Height*/
+@media(max-height:801px){
+    
+    .relleno__height{
+        display: block;
+        
+    }
+}
 
 @media(max-width:1630px){
     .financiamiento__titulo{
@@ -106,6 +114,10 @@
     .autos__container__flex{
         width: 95%;
     }
+    .formulario__container{
+        height: 65rem;
+        width: 90%;
+    }
 }
 
 @media(max-width:1060px){
@@ -177,6 +189,7 @@
         margin-bottom: 5rem;
      }
 }
+
 
 /*TABLET */
 @media(max-width:768px){
@@ -262,10 +275,7 @@
     .autos__container__flex{
         width: 95%;
     }
-    .formulario__container{
-        height: 65rem;
-        width: 90%;
-    }
+    
     
     .formulario__textarea{
         width: 70%;
@@ -276,6 +286,8 @@
     
      
 }
+
+
 @media(max-width:630px){
     .contenido__principal{
         margin-left: 0;
@@ -291,6 +303,7 @@
         height: 15rem;
         margin: auto;
     }
+    
 }
 
 @media(max-width:600px){
@@ -404,6 +417,14 @@
         height: 60rem;
         
     }
+    .formulario__mail,.formulario__nombre,.formulario__titulo{
+        text-align: center;
+    }
+    .formulario__titulo{
+        font-size: $large;
+        
+        
+    }  
 }
 
 @media (max-width:570px){
@@ -601,9 +622,7 @@
     .newsletter__input{
         width: 15rem;
     }
-    .formulario__mail,.formulario__nombre{
-        text-align: center;
-    }
+    
 }
 
 

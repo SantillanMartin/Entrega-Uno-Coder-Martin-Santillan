@@ -40,7 +40,7 @@
                  </section>
             </nav>
         </header> 
-        <main>
+        <main class="formulario-contenedor-general">
             <form class="formulario" method="post">
         
                 <section class="formulario__container">
@@ -56,24 +56,34 @@
                             <input type="text" maxlength="30" name="apellido"/>
                         </section>
                     </section>
-            
-                    
-                    <section class="formulario__mail">
+                
+                <section class="formulario__select">
+                        <label for="">Producto a contratar :</label>
+                            <select>
+                                <option disabled selected>Seleccione</option>
+                                <option>Vuelos</option>
+                                <option>Hoteles</option>
+                                <option>Autos</option>
+                                <option>Paquetes</option>
+                                <option>Otros</option>
+                            </select>
+                </section>  
+                
+                <section class="formulario__mail">
                     <section class="formulario__mail__container">
                         <label for="mail">Indique su mail :</label>
                         <input type="email">
                     </section>
-                   
-                    </section>
+                </section>
                     
-                        <textarea class="formulario__textarea"  cols="100" rows="4">Escriba aqui cualquier comentario...</textarea>
+                        
                     
                     
                     
                     <section class="formulario__botones">
                         
                         <input class="formulario__reset__submit" type="submit">
-                        <input class="formulario__reset__submit" type="reset" value="Reiniciar">
+                        <input class="formulario__reset__submit formulario__reset__submit--background--red" type="reset" value="Reiniciar">
                     </section>
                         
                             
@@ -91,6 +101,8 @@
 
     
     </section>
+
+    <section class="relleno__height"></section>
 
     <!--Financiamiento-->
 

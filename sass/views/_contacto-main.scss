@@ -4,6 +4,11 @@
     background-size: 100vw 100vh;
     height: 100vh;
 }
+.relleno__height{
+    height: 20rem;
+    width: 100%;
+    display: none;
+}
 
 .formulario{
     @include D-Flex(null,center,center);
@@ -20,8 +25,10 @@
         
     }
     &__titulo{
-        font-size: $large;
+        margin: 1rem 0;
+        font-size: $x-large;
         font-weight: 400;
+        font-family:Helvetica,sans-serif;
     }
     &__nombre-apellido{
         @include D-Flex(row,space-evenly,center);
@@ -31,23 +38,39 @@
         
     }
     &__nombre{
-        font-size: $medium;
+        font-size: $large;
         font-weight: 500;
         margin: 2rem 1rem;
+        text-align: center;
+        
         input{
-            background-color:#808080;
-            border: none;
+            background-color: #808080;
+            outline: 0;
+            border: 0;
             border-radius: 0.3rem;
             color:$text-color;
             font-family:$font-principal,sans-serif;
             font-size: $medium;
-            outline: 0;
-            font-weight: 300;
+            font-weight: 500;
+            height: 3rem;
+            text-align: center;
         }
         
     }
     &__apellido{
         @extend .formulario__nombre;
+    }
+    &__select{
+        @extend .formulario__nombre;
+        select{
+            background-color: #808080;
+            outline: 0;
+            border-radius: 0.3rem;
+            color: $text-color;
+            font-weight: 600;
+            font-size: $medium;
+            height: 3rem;
+        }
     }
     &__mail{
         @include D-Flex(row,space-around,center);
@@ -73,8 +96,9 @@
     &__reset__submit{
         font-size:$large;
         font-family: 'poppins',sans-serif;
-        font-weight: 300;
+        font-weight: 500;
         border: none;
+        border-radius: 0.75rem;
         background-color:$primary;
         color: $opacity-white;
         width: 10rem;
@@ -82,5 +106,8 @@
         &:hover{
             @include HoverBotonGris();
         }
+    }
+    &__reset__submit--background--red{
+        background-color: $opacity-red-buttons;
     }
 }

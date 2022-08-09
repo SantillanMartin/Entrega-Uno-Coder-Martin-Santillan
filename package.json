@@ -8,10 +8,10 @@
     "watch-sass": "nodemon -e scss -x \"npm run build-sass\""
   },
   "repository": {
-    "type": "git",
+    "type": "git,github",
     "url": "git+https://github.com/SantillanMartin/SantillanMartin-Proyecto-Coder.git"
   },
-  "keywords": [],
+  "keywords": ["vuelos baratos, vuelos en cuotas, vuelos a miami, vuelos baratos a usa, ofertas vuelos, vuelos argentina ofertas"],
   "author": "Martin Santillan",
   "license": "ISC",
   "bugs": {
