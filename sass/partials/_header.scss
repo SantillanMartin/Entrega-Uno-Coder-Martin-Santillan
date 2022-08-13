@@ -21,16 +21,15 @@
         @include HeaderFondo();
     }
     &__nav__contenedor{
-        @include D-Flex(row,space-between,center);
+        @include D-Flex(row,space-around,center);
         flex-wrap: wrap;
         background-color: $opacity-black-header;
         width: 100%;
         height: 12rem;
-        
+    
+    
         .header__logo{
             
-            width: 25rem;
-            margin-left: 4rem;
             transition: 2s;
             h1{
                 font-size:map-get($font-size,"x-large");
@@ -40,13 +39,11 @@
             
             
         }
-        .header__nav{
-            margin-right: 4rem;
-            
-        }
+        
 
         
     }
+   
     &__nav__lista{
         display: flex;
         flex-wrap: wrap;
@@ -66,6 +63,7 @@
     }
     
 }
+
 
 
 /*Buscador dentro del header, es el container de todos 

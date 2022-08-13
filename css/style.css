@@ -51,22 +51,18 @@ ul {
   .header__nav__contenedor {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
-    background-color: rgba(0, 0, 0, 0.116);
+    background-color: rgba(0, 0, 0, 0.774);
     width: 100%;
     height: 12rem; }
     .header__nav__contenedor .header__logo {
-      width: 25rem;
-      margin-left: 4rem;
       transition: 2s; }
       .header__nav__contenedor .header__logo h1 {
         font-size: 3rem;
         font-family: 'Poppins', sans-serif;
         color: #ffffff; }
-    .header__nav__contenedor .header__nav {
-      margin-right: 4rem; }
   .header__nav__lista {
     display: flex;
     flex-wrap: wrap;
@@ -935,9 +931,10 @@ los input de cada seccion para buscar determinado servicio.*/
 @media (max-width: 768px) {
   .header .header__nav__contenedor {
     height: auto; }
-  .header .header__nav__contenedor .header__nav .header__nav__lista {
+  .header__nav__lista {
     flex-wrap: wrap;
-    justify-content: space-evenly; }
+    justify-content: space-evenly;
+    margin: 3rem 0; }
   .buscador .buscador__container .buscador__de__vuelos__eleccion, .buscador__autos__eleccion {
     margin-bottom: 1rem; }
   .grid__container .ofertas__mes {
@@ -994,6 +991,8 @@ los input de cada seccion para buscar determinado servicio.*/
     height: auto; } }
 
 @media (max-width: 630px) {
+  .header__nav__lista {
+    gap: 3rem; }
   .contenido__principal {
     margin-left: 0; }
   .contenido__principal h2 {
@@ -1100,7 +1099,7 @@ los input de cada seccion para buscar determinado servicio.*/
     justify-content: flex-start; }
   .header__nav__lista {
     flex-direction: column;
-    align-items: center; }
+    align-items: flex-start; }
     .header__nav__lista li {
       margin: 0.8rem; }
   .buscador .buscador__container__checkboxboton {

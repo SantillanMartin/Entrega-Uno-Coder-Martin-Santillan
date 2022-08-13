@@ -196,11 +196,15 @@
     .header .header__nav__contenedor{
         height: auto;
     }
-    .header .header__nav__contenedor .header__nav .header__nav__lista {
+    .header__nav__lista {
         flex-wrap: wrap;
         justify-content: space-evenly;
+        margin: 3rem 0;
+        
         
     }
+    
+   
     .buscador .buscador__container .buscador__de__vuelos__eleccion,.buscador__autos__eleccion{
         margin-bottom: 1rem;
     }
@@ -289,6 +293,9 @@
 
 
 @media(max-width:630px){
+    .header__nav__lista{
+        gap: 3rem;
+    }
     .contenido__principal{
         margin-left: 0;
     }
@@ -456,7 +463,7 @@
     }
     .header__nav__lista{
         flex-direction: column;
-        align-items: center;
+        align-items: flex-start;
         li{
             margin:0.8rem;
             
