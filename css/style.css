@@ -318,7 +318,7 @@ los input de cada seccion para buscar determinado servicio.*/
     justify-content: space-evenly;
     flex-wrap: wrap; }
     .grid__container .ofertas__lugares__container__grid .ofertas__lugares--promo--tamaño {
-      border-radius: 1.5rem;
+      border-radius: 1.9rem;
       width: 26.7rem;
       height: 40rem;
       box-shadow: 1px 3px 20px #b1a9a9;
@@ -456,7 +456,7 @@ los input de cada seccion para buscar determinado servicio.*/
   .autos__titulo--color {
     color: #ff0000; }
   .autos__alquiler__tamaño {
-    border-radius: 1.5rem;
+    border-radius: 1.9rem;
     width: 26.7rem;
     height: 40rem;
     box-shadow: 1px 3px 20px #b1a9a9;
@@ -691,7 +691,6 @@ los input de cada seccion para buscar determinado servicio.*/
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  background: #D9D9D9;
   width: 100%;
   height: 21rem; }
   .prefooter .prefooter__legales__textouno {
@@ -792,15 +791,62 @@ los input de cada seccion para buscar determinado servicio.*/
 
 /* COMIENZO DEL FOOTER COMPARTIDO POR TODAS LAS PAGINAS*/
 .footer {
-  background-color: rgba(0, 0, 0, 0.836);
+  background-color: rgba(0, 0, 0, 0.918);
   width: 100%;
-  height: 90px;
+  height: 24rem;
   display: flex;
   justify-content: center;
   align-items: center;
-  font-family: 'DM Sans', sans-serif;
-  color: white;
-  font-size: 2.4rem; }
+  font-family: "poppins", sans-serif, sans-serif;
+  color: #ffffff;
+  font-size: 1.4rem;
+  font-weight: 300; }
+  .footer__container {
+    width: 70%;
+    height: 20rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center; }
+  .footer__lista__horarios {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    border-bottom: 0.1rem solid #ffffff; }
+  .footer__subcontainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%; }
+  .footer__lista__varios {
+    border: 0.1rem solid #ffffff;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 70%; }
+    .footer__lista__varios a {
+      color: white; }
+  .footer__contacto-logo {
+    width: 20%; }
+  .footer__imagen {
+    width: 12.6rem;
+    height: 5rem; }
+  .footer__copyright {
+    font-weight: 400;
+    font-size: 1.2rem; }
+
+.whastapp-fixed {
+  position: fixed;
+  bottom: 15px;
+  right: 5px;
+  z-index: 999; }
+  .whastapp-fixed:hover {
+    cursor: pointer; }
 
 /* MEDIAS QUERIES*/
 /* Height*/
@@ -1190,11 +1236,24 @@ los input de cada seccion para buscar determinado servicio.*/
       box-shadow: 1px 3px 16px rgba(0, 0, 0, 0.37); }
   .footer {
     width: 100%;
-    height: auto;
+    height: 30rem;
     font-size: 1.4rem; }
-  .footer p {
-    margin-top: 2rem;
-    margin-bottom: 2rem; }
+    .footer__container {
+      margin-top: 3rem;
+      width: 90%; }
+    .footer__subcontainer {
+      flex-direction: column;
+      height: auto; }
+    .footer__lista__horarios {
+      margin-bottom: 3rem;
+      width: 100%; }
+    .footer__lista__varios {
+      width: 100%; }
+      .footer__lista__varios a {
+        padding: 1rem 1rem; }
+    .footer__contacto-logo {
+      width: 100%;
+      margin-top: 2rem; }
   .prefooter {
     height: auto;
     justify-content: space-evenly; }

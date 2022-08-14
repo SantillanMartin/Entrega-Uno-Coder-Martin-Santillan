@@ -578,17 +578,36 @@
             @include HoverBotonRojo();
         }
     }
-
+    
     .footer{
         width: 100%;
-        height: auto;
+        height: 30rem;
         font-size: 1.4rem;
-         
+        &__container{
+            margin-top: 3rem;
+            width: 90%;
+        }
+        &__subcontainer{
+            flex-direction: column;
+            height: auto;
+        }
+        &__lista__horarios{
+            margin-bottom: 3rem;
+            width: 100%;
+        }
+        &__lista__varios{
+            width: 100%;
+            a{
+                padding: 1rem 1rem;
+            }
+        }
+        &__contacto-logo{
+            width: 100%;
+            margin-top:2rem;
+        } 
+        
     }
-    .footer p{
-        margin-top: 2rem;
-        margin-bottom: 2rem;
-    }
+    
     .prefooter{
         
         height: auto;

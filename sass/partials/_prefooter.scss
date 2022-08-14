@@ -3,7 +3,6 @@
 .prefooter{
     @include D-Flex(column,center,center);
     flex-wrap: wrap;
-    background: $prefooter;
     width: 100%;
     height: 21rem;
     .prefooter__legales__textouno{
