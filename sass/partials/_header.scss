@@ -43,12 +43,22 @@
 
         
     }
+    &__imagen__hamburguesa{
+        width: 7rem;
+        height: 7rem;
+        display: none;
+    }
+    &__hamburguesa{
+        display: none;
+    }
+    
    
     &__nav__lista{
         display: flex;
         flex-wrap: wrap;
         font-family: 'poppins',sans-serif;
         list-style: none;
+        transition: 1s;
         a{
             padding: 2.5rem;
             font-size: map-get($font-size,"large");
