@@ -57,12 +57,10 @@ ul {
     background-color: rgba(0, 0, 0, 0.774);
     width: 100%;
     height: 12rem; }
-    .header__nav__contenedor .header__logo {
-      transition: 2s; }
-      .header__nav__contenedor .header__logo h1 {
-        font-size: 3rem;
-        font-family: 'Poppins', sans-serif;
-        color: #ffffff; }
+    .header__nav__contenedor .header__logo h1 {
+      font-size: 3rem;
+      font-family: 'Poppins', sans-serif;
+      color: #ffffff; }
   .header__imagen__hamburguesa {
     width: 7rem;
     height: 7rem;
@@ -84,6 +82,14 @@ ul {
     .header__nav__lista li:hover {
       transform: scale(1.2); }
 
+@keyframes fromBelow {
+  0% {
+    transform: translateY(30%);
+    opacity: 0; }
+  100% {
+    transform: translateY(0%);
+    opacity: 1; } }
+
 /*Buscador dentro del header, es el container de todos 
 los input de cada seccion para buscar determinado servicio.*/
 .buscador {
@@ -96,6 +102,7 @@ los input de cada seccion para buscar determinado servicio.*/
   height: 25rem;
   margin-top: 8.5rem;
   max-width: 1600px;
+  animation: fromBelow 1s forwards;
   /* Esta parte pertenece a la seccion autos, son inputs dentro de buscador*/
   /*Botones dentro de los buscadores Destinos,Hoteles,Autos,*/ }
   .buscador .buscador__titulo {

@@ -30,7 +30,7 @@
     
         .header__logo{
             
-            transition: 2s;
+            
             h1{
                 font-size:map-get($font-size,"x-large");
                 font-family: 'Poppins', sans-serif;
@@ -75,6 +75,18 @@
 }
 
 
+@keyframes fromBelow {
+    0% {
+        transform: translateY(30%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0%);
+        opacity: 1;
+    }
+}
+
+
 
 /*Buscador dentro del header, es el container de todos 
 los input de cada seccion para buscar determinado servicio.*/
@@ -90,6 +102,7 @@ los input de cada seccion para buscar determinado servicio.*/
     height: 25rem;
     margin-top: 8.5rem;
     max-width: 1600px;
+    animation: fromBelow 1s forwards;
     
     .buscador__titulo{
         margin-left: 1rem;
